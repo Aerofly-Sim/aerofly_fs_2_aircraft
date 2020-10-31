@@ -1,7 +1,7 @@
 # Cessna 172 Mod
 Aerofly FS 2 User-Made Aircraft Collection
 
-# Installation
+## Installation
 
 This installation process will result in two Cessna 172s in the selection, one will be this cold and dark mod, the other one will be the original aircraft. (The mod will be towards the end of the selection list, not next to the original aircraft)
 
