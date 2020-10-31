@@ -1,8 +1,6 @@
 # Aerofly FS 2 User-Made Aircraft Collection
 
-Welcome to the Aerofly FS 2 Github page where we as a community develop new aircraft together for the Aerofly FS 2 Flight Simulator.
-
-You can download all of the user made aircraft together to install or update them all at once.
+Welcome to the Aerofly FS 2 Github page where we as a community develop new aircraft together for the Aerofly FS 2 Flight Simulator. You can download all of the user made aircraft together to install or update them all at once.
 
 ## How To Download?
 
