@@ -15,3 +15,6 @@ This installation process will result in two Cessna 172s in the selection, one w
 7) Except for the options.tmc file delete all “.tmd” and “.tmc” files in the “c172mod” folder.
 8) Downloading the zip file decompress it in a local directory.
 9) Copy all files from the download and paste them in the new “c172mod” folder.
+
+The file structure should look like this after the installation:
+“C:\Users\%USERNAME%\Documents\Aerofly FS 2\aircraft\c172mod\c172mod.tmd”
