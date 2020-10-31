@@ -47,4 +47,4 @@ The mod requires files of the default aircraft which we are not allowed to uploa
 9) Copy all files from the download and paste them in the new “c172mod” folder.
 
 The file structure should look like this after the installation:
-“C:\Users\%USERNAME%\Documents\Aerofly FS 2\aircraft\c172mod\c172mod.tmd”
+''C:\Users\%USERNAME%\Documents\Aerofly FS 2\aircraft\c172mod\c172mod.tmd''
