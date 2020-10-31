@@ -1,0 +1,46 @@
+﻿<[file][][]
+    <[object][][]
+        <[int][Version][210]>
+        <[vec32array][ContactSpheres][ (3.59445 0.0 -0.55947 0.17) (-0.21518 0.95044 -0.47149 0.23) (-0.21518 -0.95044 -0.47149 0.23) ]>
+        <[string8][DisplayName][Siai Marchetti S-211]>
+        <[string8][DescriptionTextEN][The SIAI-Marchetti S.211 (later Aermacchi S-211 is a turbofan-powered military trainer aircraft designed and originally marketed by SIAI-Marchetti. Some 60 aircraft have been sold to air forces around the world. Aermacchi bought the production rights in 1997. The redesigned M-311 (now M-345) is currently under development by Alenia Aermacchi.]>
+        <[string8][DescriptionTextDE][The SIAI-Marchetti S.211 (later Aermacchi S-211 is a turbofan-powered military trainer aircraft designed and originally marketed by SIAI-Marchetti. Some 60 aircraft have been sold to air forces around the world. Aermacchi bought the production rights in 1997. The redesigned M-311 (now M-345) is currently under development by Alenia Aermacchi.]>
+        <[string8][DescriptionTextFR][Le SIAI Marchetti S-211 est un biplace d'entraînement militaire et d'appui tactique à réaction italien. Cet appareil a été développé par SIAI Marchetti. Aermacchi a absorbé SIAI Marchetti en 1997 et poursuivi le développement de cet appareil, annonçant en 2005 une nouvelle version désignée Aermacchi M-311.]>
+        <[string8][DescriptionTextJP][アエルマッキ S-211 (Aermacchi S-211) は、元々イタリアのSIAI-マルケッティ社でS.211として開発されたジェット軍用練習機である。約60機が海外の空軍に販売された。1977年にアエルマッキ社が製造権を購入し、現在はアレーニア・アエルマッキ社で改良型M-345が開発されている。]>
+        <[string8][DescriptionTextES][El Aermacchi S-211 es un avión de entrenamiento a reacción, diseñado por el fabricante aeronáutico italiano SIAI Marchetti, empresa que lo denominó originalmente como S.211. Se llegaron a fabricar 60 unidades de este modelo. Aermacchi compró sus derechos de fabricación en el año 1997, llegando a diseñar una variante del mismo, denominada M-311.]>
+        <[float64][WingSpan][10.86]>
+        <[float64][Mass][3800.0]>
+        <[float64][MinimumSpeed]     [ 48.9]>
+        <[float64][ApproachSpeed]    [ 61.7]>
+        <[float64][CruiseSpeed]      [226.9]>
+        <[float64][MaximumSpeed]     [360]>
+        <[float64][CruiseMachNumber] [0.76]>
+        <[float64][MaximumMachNumber][0.82]>
+        <[tmvector2d][FlapSpeedRange]   [  50.4  77.2 ]>
+        <[tmvector2d][NormalSpeedRange] [  60.4 205.7 ]>
+        <[tmvector2d][CautionSpeedRange][ 205.7 257.2 ]>
+        <[float64][MaximumAltitude][12200.0]>
+        <[float64][CruiseAltitude] [ 7620.0]>
+        <[float64][QSpan][8.43]>
+        <[float64][QMass][4070]>
+        <[float64][QSpeed][250.0]>
+        <[float64][QPower][0.0]>
+        <[float64][QThrust][1*11120.0]>
+        <[float64][QRange][2200000.0]>
+        <[float64][QRatio][0.0]>
+        <[float64][QBuild][200]>
+        <[float64][QVirgin][1976]>
+        <[tmvector2d][FlapSettings][ (0.0 0.0) (0.5 0.5) (1.0 1.0) ]>
+        <[string8][FlapQualifier][normalized]>
+        <[float64][AileronGain][0.4]>
+        <[float64][ElevatorGain][0.4]>
+        <[float64][RudderGain][1.0]>
+        <[bool][Airplane][true]>
+        <[bool][Helicopter][false]>
+        <[bool][Glider][false]>
+        <[bool][Jet][true]>
+        <[bool][Flaps][true]>
+        <[bool][Retracts][true]>
+        <[string8][Pilot][pilot_jet_2]>
+    >
+>

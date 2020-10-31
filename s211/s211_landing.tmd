@@ -1,0 +1,47 @@
+<[file][][]
+    <[modelmanager][][]
+        <[pointer_list_tmuniverse][DynamicObjects][]
+
+            // engine
+            <[input_lever][ThrottleInput][]
+                <[float64][Value][0.44]>
+            >
+
+            // flaps full
+            <[input_default][FlapsInput][0]
+                <[float64][Value][1.0]>
+            >
+            <[servoclassic][Flaps][0]
+                <[float64][Position][0.6]>
+            >
+
+            // gear down
+            <[input_switch][GearLever][0]
+                <[float64][Value][1.0]>
+            >
+            <[servolinear][GearSequence][0]
+                <[float64][Position][1.0]>
+            >
+
+            // trim back
+            <[input_default][PitchTrim][90]
+                <[float64][Value][-0.48]>
+            >
+
+            // lights
+            <[input_switch][StrobeLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_switch][BeaconLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_discrete][NavigationLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_discrete][LandingLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+
+        >
+    >
+>
