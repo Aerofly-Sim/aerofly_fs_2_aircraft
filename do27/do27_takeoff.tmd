@@ -1,0 +1,26 @@
+<[file][][]
+    <[modelmanager][][]
+        <[pointer_list_tmuniverse][DynamicObjects][]
+
+            // flaps 0
+            <[input_default][FlapsInput][0]
+                <[float64][Value][0.0]>
+            >
+            <[servoclassic][FlapLever][0]
+                <[float64][Position][0.0]>
+            >
+
+            // lights
+            <[input_switch][BeaconLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_switch][NavigationLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_switch][LandingLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+
+        >
+    >
+>
