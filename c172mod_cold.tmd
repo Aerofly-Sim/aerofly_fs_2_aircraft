@@ -1,0 +1,163 @@
+<[file][][]
+    <[modelmanager][][]
+        <[pointer_list_tmuniverse][DynamicObjects][]
+
+            // engine
+            <[input_lever][ThrottleInput][]
+                <[float64][Value][0.0]>
+            >
+            <[input_lever][Mixture][]
+                <[float64][Value][0.0]>
+            >
+            <[input_discrete_momentary][Magnetos][]
+                <[float64][Value][0.0]>
+            >
+            <[input_switch][SwitchFuelPump][]
+                <[float64][Value][0.0]>
+            >
+            <[input_default][MaximumEGT][]
+                <[float64][Value][700.0]>
+            >
+            <[servoclassic][EngineOilTemperature][]
+                <[float64][Position][288.15]>
+            >
+            <[multibody_joint][PropellerJoint][]
+                <[float64][Velocity][0.0]>
+            >
+
+            // gear bolted down
+            <[input_switch][ParkingBrakeInput][]
+                <[float64][Value][1.0]>
+            >
+            <[servoclassic][ParkingBrake][]
+                <[float64][Position][1.0]>
+            >
+
+            // flaps 0
+            <[input_default][FlapsInput][]
+                <[float64][Value][0.0]>
+            >
+            <[electrical_actuator][FlapsMotor][]
+                <[float64][Position][0.0]>
+            >
+
+            // trim for take-off
+            <[input_default][PitchTrim][]
+                <[float64][Value][-0.18]>
+            >
+            <[servoclassic][ServoElevator][]
+                <[float64][Position][-0.118]>
+            >
+
+            // lights
+            <[input_switch][StrobeLightSwitch][]
+                <[float64][Value][0.0]>
+            >
+            <[input_switch][BeaconLightSwitch][]
+                <[float64][Value][0.0]>
+            >
+            <[input_switch][NavigationLightSwitch][]
+                <[float64][Value][0.0]>
+            >
+            <[input_switch][LandingLightSwitch][]
+                <[float64][Value][0.0]>
+            >
+            <[input_switch][TaxiLightSwitch][]
+                <[float64][Value][0.0]>
+            >
+
+            // panel state
+            <[input_switch][DMESelectedOn][]
+                <[float64][Value][0.0]>
+            >
+            <[input_default][ADFVolume][]
+                <[float64][Value][0.0]>
+            >
+            <[input_default][COM1Volume][]
+                <[float64][Value][0.0]>
+            >
+            <[input_default][COM2Volume][]
+                <[float64][Value][0.0]>
+            >
+            <[input_discrete][TransponderMode][]
+                <[float64][Value][0.0]>
+            >
+            <[variable][TransponderIdent][]
+                <[float64][Value][0.0]>
+            >
+            <[input_discrete][EmergencyLocationTransmitterSwitch][]
+                <[float64][Value][-1.0]>
+            >
+
+            // fuel
+            <[input_discrete][FuelSelectorInput][]
+                <[float64][Value][0.0]>
+            >
+            <[servoclassic][FuelSelector][]
+                <[float64][Position][0.0]>
+            >
+            <[event_edge][FuelSelector_Sound0][]
+                <[float64][Value][0.0]>
+            >
+            <[event_edge][FuelSelector_Sound1][]
+                <[float64][Value][0.0]>
+            >
+            <[input_switch][FuelShutOff][]
+                <[float64][Value][1.0]>
+            >
+
+            // electrical
+            <[input_switch][SwitchMasterBattery][]
+                <[float64][Value][0.0]>
+            >
+            <[event_edge][SwitchMasterBattery_SetOff][]
+                <[float64][Value][0.0]>
+            >
+            <[input_switch][SwitchMasterAlternator][]
+                <[float64][Value][0.0]>
+            >
+            <[event_edge][SwitchMasterAlternator_SetOn][]
+                <[float64][Value][0.0]>
+            >
+            <[input_switch][SwitchAvionicsBus1][]
+                <[float64][Value][0.0]>
+            >
+            <[input_switch][SwitchAvionicsBus2][]
+                <[float64][Value][0.0]>
+            >
+            <[input_switch][SwitchPitotHeat][]
+                <[float64][Value][0.0]>
+            >
+
+            <[electrical_switch][BatterySwitch][]
+                <[float64][Value][0.0]>
+            >
+            <[electrical_switch][MasterAlternatorSwitch][]
+                <[float64][Value][0.0]>
+            >
+            <[electrical_switch][AvionicsSwitch][]
+                <[float64][Value][0.0]>
+            >
+            <[electrical_switch][StarterSwitch][]
+                <[float64][Value][0.0]>
+            >
+
+            <[electrical_bus][BatteryBus][]
+                <[float64][Voltage][0.0]>
+            >
+            <[electrical_bus][AlternatorBus][]
+                <[float64][Voltage][0.0]>
+            >
+            <[electrical_bus][MainBus][]
+                <[float64][Voltage][0.0]>
+            >
+            <[electrical_bus][StarterBus][]
+                <[float64][Voltage][0.0]>
+            >
+            <[electrical_bus][AvionicsBus][]
+                <[float64][Voltage][0.0]>
+            >
+        >
+    >
+>
+
