@@ -16,10 +16,10 @@ Inside you can find the individual folders for all of the user-made aircraft.
 Simply move all of these folders into your user documents folder Aerofly FS 2 aircraft folder.
 
 For Windows PC this is:
- ''C:\Users\%USERNAME%\Documents\Aerofly FS 2\aircraft\''
+'C:\Users\%USERNAME%\Documents\Aerofly FS 2\aircraft\'
 
 For Mac OS the folder is:
-''Macintosh HD/Users/…/Library/Containers/com.aerofly.aerofly-fs-2-mac/Data/Library/Application Support/Aerofly FS 2/aircraft/''
+'Macintosh HD/Users/…/Library/Containers/com.aerofly.aerofly-fs-2-mac/Data/Library/Application Support/Aerofly FS 2/aircraft/'
 
 
 **Please Note that modded aircraft may require files from the default installation folder in order to work! (See below)**
@@ -47,4 +47,4 @@ The mod requires files of the default aircraft which we are not allowed to uploa
 9) Copy all files from the download and paste them in the new “c172mod” folder.
 
 The file structure should look like this after the installation:
-''C:\Users\%USERNAME%\Documents\Aerofly FS 2\aircraft\c172mod\c172mod.tmd''
+'C:\Users\%USERNAME%\Documents\Aerofly FS 2\aircraft\c172mod\c172mod.tmd'
