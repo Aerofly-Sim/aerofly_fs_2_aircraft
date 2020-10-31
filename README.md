@@ -7,11 +7,13 @@ You can download all of the user made aircraft together to install or update the
 ## How To Download?
 
 **Release Versions**
+
 On the right hand column you can see a "Releases" info with links to the latest release files.
 - Click on the attached zip file to download only the necessary files for the update.
 - Click the "Source code (zip)" option below to always download all user aircraft files at once to stay up to date.
 
 **Beta Versions**
+
 In the top right of this view you can see a green download button "Code".
 Click that green Code button and select the "Download ZIP" option.
 Save the download to a temporary location.
