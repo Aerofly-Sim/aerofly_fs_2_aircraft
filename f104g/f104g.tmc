@@ -1,0 +1,42 @@
+﻿<[file][][]
+    <[object][][]
+        <[int][Version][210]>
+        <[vec32array][ContactSpheres][ (  3.91495 -0.00027 -1.16564  0.2) (  -0.4179 1.2680 -1.0485  0.315) ( -0.4179 -1.2680 -1.0485  0.315) ]>
+        <[string8][DisplayName][F-104G]>
+        <[string8][DescriptionTextEN][Lockheed F-104 Starfighter]>
+        <[float64][WingSpan][6.63]>
+        <[float64][Mass][6350]>
+        <[float64][MinimumSpeed] [ 78.2]>
+        <[float64][ApproachSpeed][113.2]>
+        <[float64][CruiseSpeed]  [257.0]>
+        <[float64][MaximumSpeed] [683.0]>
+		<[float64][CruiseMachNumber] [1.22]>
+        <[float64][MaximumMachNumber][2.0]>
+        <[tmvector2d][FlapSpeedRange]   [  78.2  98.3 ]>
+        <[tmvector2d][NormalSpeedRange] [  91.0 285.0 ]>
+        <[tmvector2d][CautionSpeedRange][ 285.0 683.0 ]>
+        <[float64][MaximumAltitude][15000]>
+        <[float64][CruiseAltitude] [7620.0]>
+        <[float64][QSpan][6.63]>
+        <[float64][QMass][13166.0]>
+        <[float64][QSpeed][683.0]>
+        <[float64][QPower][0.0]>
+        <[float64][QThrust][1*69000.0]>
+        <[float64][QRange][676000.0]>
+        <[float64][QRatio][0.0]>
+        <[float64][QBuild][1122]>
+        <[float64][QVirgin][1956]>
+        <[float64][AileronGain][0.4]>
+        <[float64][ElevatorGain][0.4]>
+        <[float64][RudderGain][0.2]>
+		<[tmvector2d][FlapSettings][ (0.0 0.0) (0.5 0.261799385771) (1.0 0.523599) ]>
+        <[string8][FlapQualifier][normalized]>
+        <[bool][Airplane][true]>
+        <[bool][Helicopter][false]>
+        <[bool][Glider][false]>
+        <[bool][Jet][true]>
+        <[bool][Flaps][true]>
+        <[bool][Retracts][true]>
+//        <[string8][Pilot][pilot_jet]>
+    >
+>

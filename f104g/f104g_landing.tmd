@@ -1,0 +1,122 @@
+<[file][][]
+    <[modelmanager][][]
+        <[pointer_list_tmuniverse][DynamicObjects][]
+
+            // engines
+            <[input_lever][Throttle1Input][210]
+                <[float64][Value][0.5]>
+            >
+            <[servoclassic][ThrottleLever][210]
+                <[float64][Value][0.5]>
+            >
+
+            // flaps full
+            <[input_default][FlapsInput][0]
+                <[float64][Value][1.0]>
+            >
+            <[servoclassic][ServoFlapLever][]
+                <[float64][Position][1.0]>
+            >
+            <[servoclassic][ServoLeftFlap][128]
+                <[float64][Position][0.523599]>
+            >
+            <[servoclassic][ServoRightFlap][129]
+                <[float64][Position][0.523599]>
+            >
+            <[servoclassic][ServoLeftSlat][133]
+                <[float64][Position][0.261799385771]>
+            >
+            <[servoclassic][ServoRightSlat][133]
+                <[float64][Position][0.261799385771]>
+            >
+
+            // gear down
+            <[servoclassic][GearLever][0]
+                <[float64][Value][1.0]>
+            >
+            <[servolinear][GearSequence][0]
+                <[float64][Position][1.0]>
+            >
+
+            // trim back
+            <[input_default][PitchTrim][90]
+                <[float64][Value][-0.823]>
+            >
+
+            // lights
+            <[input_switch][StrobeLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_discrete][LandingLightSwitchTaxi][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_discrete][NavigationLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_discrete][LandingLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+        // switches
+			<[input_switch][BatteryMasterSwitch][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_switch][LeftGeneratorSwitch][0]
+                <[float64][Value][0.0]>
+            >
+			<[input_switch][RightGeneratorSwitch][0]
+                <[float64][Value][0.0]>
+            >
+			<[input_switch][GPSOn][0]
+                <[float64][Value][1.0]>
+            >
+			<[input_switch][FuelShutOff][0]
+                <[float64][Value][0.0]>
+            >
+			<[input_default][MapBrightnessKnob][0]
+                <[float64][Value][0.5]>
+            >
+			<[input_discrete][EngineStartSwitch1][]
+			    <[float64][Value][1.0]>
+            >
+			<[input_discrete][EngineStartSwitch2][]
+			    <[float64][Value][1.0]>
+            >
+			<[input_discrete][OOnOff][]
+			    <[float64][Value][1.0]>
+            >
+			<[input_discrete][INSSelector][]
+			    <[float64][Value][2.0]>
+            >
+			<[input_discrete][DCU9][]
+			    <[float64][Value][3.0]>
+            >
+			<[input_discrete][IFFM1Switch][]
+			    <[float64][Value][1.0]>
+            >
+			<[input_discrete][IFFM3ASwitch][]
+			    <[float64][Value][1.0]>
+            >
+			<[input_switch][FlyingSuit][0]
+                <[float64][Value][1.0]>
+            >
+			<[input_switch][SwitchPitotHeat][0]
+                <[float64][Value][1.0]>
+            >
+			<[input_discrete][GroundSpeedSelector][]
+			    <[float64][Value][3.0]>
+            >
+			<[input_discrete][GroundSpeedTas][]
+			    <[float64][Value][-1.0]>
+            >
+			<[input_discrete][IFFMaster][]
+			    <[float64][Value][3.0]>
+            >
+			<[input_discrete][IFFReply][]
+			    <[float64][Value][2.0]>
+            >
+			<[input_discrete][TCNModeSelect][]
+			    <[float64][Value][2.0]>
+            >
+        >
+    >
+>

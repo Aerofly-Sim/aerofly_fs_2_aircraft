@@ -1,0 +1,2596 @@
+<[file][][]
+    <[modelmanager][][]
+        <[pointer_list_tmcontrol][ControlObjects][]
+
+//Instruments
+
+            <[control_cylinder][PressureSettingPilot][0]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 6.045772 0.1501 0.315674 ]>
+                <[matrix3_float64][B0][ 0.9655 0.0 -0.26039  0.0 1.0 0.0  0.26039 0.0 0.9655 ]>
+                <[vector3_float64][Direction][ 0.9655 0.0 -0.26039 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][PressureSettingPilot]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.021]>
+            >
+            <[control_cylinder][ADISetupFront][1]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 6.069478 -0.1477 0.412392 ]>
+                <[matrix3_float64][B0][ 0.9655 0.0 -0.26039  0.0 1.0 0.0  0.26039 0.0 0.9655 ]>
+                <[vector3_float64][Direction][ 0.9655 0.0 -0.26039 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][ADIAircraftPositionSetup]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.008]>
+                <[float64][Length][0.022]>
+            >
+             <[control_cylinder][AccelerationReset][2]
+                <[string8][Type][button]>
+                <[vector3_float64][R0][ 6.072299 0.2238 0.397527 ]>
+                <[matrix3_float64][B0][ 0.96595 0.0 -0.25874  0.0 1.0 0.0  0.25874 0.0 0.96595 ]>
+                <[vector3_float64][Direction][ 0.9655 0.0 -0.26039 ]>
+                <[control_message][OnPush][]
+                    <[string8][Message][Accelerometer.Reset]>
+                    <[string8][Qualifiers][event]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.006]>
+                <[float64][Length][0.012]>
+            >
+            <[control_cylinder][RadarAltitudeBug][3]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 6.051812 0.2194 0.322867 ]>
+                <[matrix3_float64][B0][ 0.9655 0.0 -0.26039  0.0 1.0 0.0  0.26039 0.0 0.9655 ]>
+                <[vector3_float64][Direction][ 0.9655 0.0 -0.26039 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][RadarAltitudeBug]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.021]>
+            >
+            <[control_cylinder][MachBug][4]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 6.068711 0.084 0.408777 ]>
+                <[matrix3_float64][B0][ 0.9655 0.0 -0.26039  0.0 1.0 0.0  0.26039 0.0 0.9655 ]>
+                <[vector3_float64][Direction][ 0.9655 0.0 -0.26039 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][MachBug]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.022]>
+            >
+            <[control_cylinder][LightsWarning][5]
+                <[string8][Type][button]>
+                <[vector3_float64][R0][ 6.029821 -0.3223 0.11924 ]>
+                <[matrix3_float64][B0][ 0.94267 0.00006 -0.33373  0.33373 -0.00001 0.94267  0.00006 -1.0 -0.00003 ]>
+                <[vector3_float64][Direction][ -1.0 0.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnPush][]
+                    <[string8][Message][Controls.AnnunciatorTest]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.004]>
+                <[float64][Length][0.013]>
+            >
+            <[control_box][Tailhook][6]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.972313 0.343652 0.356171 ]>
+                <[matrix3_float64][B0][ -0.9953 0.04459 0.08594  0.08607 0.00106 0.99629  0.04433 0.999 -0.00489 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][TailHook]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[vector3_float64][Dimensions][0.016 0.005 0.006]>
+            >
+            <[control_cylinder][TailHookBase][6]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.9824 0.3432 0.3553 ]>
+                <[matrix3_float64][B0][ -0.99531 0.0452 0.08547  0.08551 -0.00104 0.99634  0.04513 0.99898 -0.00283 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][TailHook]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.002]>
+            >
+            <[control_box][Storm][7]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 6.065679 -0.328133 0.247072 ]>
+                <[matrix3_float64][B0][ 0.94262 -0.00004 -0.33385  0.33385 0.00002 0.94262  -0.00004 -1.0 0.00003 ]>
+                <[vector3_float64][Direction][ 0.26039 0.0 0.9655 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Storm]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[vector3_float64][Dimensions][0.016 0.005 0.006]>
+            >
+            <[control_box][FireTestButton1][12]
+                <[string8][Type][button]>
+                <[vector3_float64][R0][ 6.097465 0.181 0.459626 ]>
+                <[matrix3_float64][B0][ 0.0 -1.0 0.0  0.2588 0.0 0.9659  -0.9659 0.0 0.2588 ]>
+                <[vector3_float64][Direction][ 0.9655 0.0 -0.26039 ]>
+                <[control_message][OnPush][]
+                    <[string8][Message][FireTest1]>
+                    <[string8][Qualifiers][event]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Dimensions][0.03 0.013 0.014]>
+            >
+            <[control_box][FireTestButton2][12]
+                <[string8][Type][button]>
+                <[vector3_float64][R0][ 6.091253 -0.2439 0.437065 ]>
+                <[matrix3_float64][B0][ 0.0 -1.0 0.0  0.2588 0.0 0.9659  -0.9659 0.0 0.2588 ]>
+                <[vector3_float64][Direction][ 0.9655 0.0 -0.26039 ]>
+                <[control_message][OnPush][]
+                    <[string8][Message][FireTest2]>
+                    <[string8][Qualifiers][event]>
+                  <[float64][Value][1.0]>
+               >
+                <[vector3_float64][Dimensions][0.03 0.013 0.014]>
+            >
+            <[control_box][ClockStartButton][8]
+                <[string8][Type][button]>
+                <[vector3_float64][R0][ 5.978315 -0.332765 0.390612 ]>
+                <[matrix3_float64][B0][ -0.6969 -0.7118 0.0881  0.6711 -0.6905 -0.2699  0.2529 -0.129 0.9588 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[control_message][OnPush][]
+                    <[string8][Message][Stopwatch.StartStop]>
+                    <[string8][Qualifiers][event]>
+                    <[float64][Value][1.0]>
+                >
+                <[vector3_float64][Dimensions][0.005 0.005 0.006]>
+            >
+            <[control_cylinder][ClockReset][9]
+                <[string8][Type][button]>
+                <[vector3_float64][R0][ 5.955546 -0.316245 0.343912 ]>
+                <[matrix3_float64][B0][ -0.6685 0.69303 0.26984  0.25298 -0.12929 0.95879  0.69936 0.70922 -0.08889 ]>
+                <[vector3_float64][Direction][ 0.6685 -0.69303 -0.26984 ]>
+                <[control_message][OnPush][]
+                    <[string8][Message][Stopwatch.Reset]>
+                    <[string8][Qualifiers][event]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.004]>
+                <[float64][Length][0.008]>
+            >
+			<[control_cylinder][HudBrightness][4]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 6.1103 0.1254 0.4914 ]>
+                <[matrix3_float64][B0][ 0.9655 0.0 -0.26039  0.0 1.0 0.0  0.26039 0.0 0.9655 ]>
+                <[vector3_float64][Direction][ 0.9655 0.0 -0.26039 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Controls.Lighting.BrightnessHUD]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.022]>
+            >
+
+//PHI Knobs
+            //KnobHomingBearing
+            <[control_cylinder][SelectedCourse][11]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 6.046267 -0.0485 0.325648 ]>
+                <[matrix3_float64][B0][ 0.9655 0.0 -0.26039  0.0 1.0 0.0  0.26039 0.0 0.9655 ]>
+                <[vector3_float64][Direction][ 0.9655 0.0 -0.26039 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Autopilot.SelectedHeading]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.01]>
+                <[float64][Length][0.022]>
+            >
+            //KnobGriv
+            <[control_cylinder][PHIGriv][11]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 6.071839 -0.0505 0.421156 ]>
+                <[matrix3_float64][B0][ 0.9655 0.0 -0.26039  0.0 1.0 0.0  0.26039 0.0 0.9655 ]>
+                <[vector3_float64][Direction][ 0.9655 0.0 -0.26039 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Navigation.SelectedCourse]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.01]>
+                <[float64][Length][0.022]>
+            >
+            //KnobPHIInputSelector
+            <[control_cylinder][DMEOn][12]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 6.073898 0.0503 0.425128 ]>
+                <[matrix3_float64][B0][ 0.9655 0.0 -0.26039  0.0 1.0 0.0  0.26039 0.0 0.9655 ]>
+                <[vector3_float64][Direction][ 0.9655 0.0 -0.26039 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][DME.OnOff]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.008]>
+                <[float64][Length][0.02]>
+            >
+            //KnobHomingDistance
+//            <[control_cylinder][PHIDistance][8]
+//                <[string8][Type][knob]>
+//                <[vector3_float64][R0][6.0572 0.0474 0.3224]>
+//                <[matrix3_float64][B0][-0.0000 -1.0000 0.0000 0.2588 0.0000 0.9659 -0.9659 0.0000 0.2588]>
+//                <[vector3_float64][Direction][ -0.9659 -0.0000 0.2588 ]>
+//                <[float64][StepAngle][0.1]>
+//                <[control_message][OnRotate][]
+//                    <[string8][Message][Navigation.NAV1Frequency]>
+//                    <[string8][Qualifiers][step]>
+//                    <[float64][Value][-1.0]>
+//                >
+//                <[float64][Radius][0.008]>
+//                <[float64][Length][0.02]>
+//            >
+
+// Moving Map 120
+            <[control_cylinder][DisplayKnob0][120]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 6.039 -0.0671 0.0785 ]>
+                <[matrix3_float64][B0][ 0.94266 0.00002 -0.33377  -0.33167 0.11204 -0.93672  0.03738 0.9937 0.10562 ]>
+                <[vector3_float64][Direction][ 0.977437 0.0 -0.211229 ]>
+                <[float64][StepAngle][0.3]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Map.Zoom]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.006]>
+                <[float64][Length][0.01]>
+            >
+            <[control_cylinder][DisplayKnob1][121]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 6.0301 -0.0671 0.0806 ]>
+                <[matrix3_float64][B0][ 0.94266 0.00002 -0.33377  -0.33167 0.11204 -0.93672  0.03738 0.9937 0.10562 ]>
+                <[vector3_float64][Direction][ 0.977437 0.0 -0.211229 ]>
+                <[float64][StepAngle][0.3]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][DisplayKnob1]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.006]>
+                <[float64][Length][0.01]>
+            >
+            <[control_cylinder][MapBrightness][122]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 6.0718 0.0678 0.2174 ]>
+                <[matrix3_float64][B0][ -0.97728 0.00074 0.21195  -0.21191 0.01516 -0.97717  -0.00394 -0.99988 -0.01466 ]>
+                <[vector3_float64][Direction][ 0.977437 0.0 -0.211229 ]>
+                <[float64][StepAngle][0.3]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Controls.Lighting.MapBrightness]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.006]>
+                <[float64][Length][0.01]>
+            >
+            <[control_box][GPSOnOff][123]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 6.040042 -0.066013 0.098757 ]>
+                <[matrix3_float64][B0][ 0.9988 0.00266 0.04897  -0.04897 -0.00098 0.9988  0.0027 -1.0 -0.00085 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.GPSOnOff]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[vector3_float64][Dimensions][0.016 0.005 0.006]>
+            >
+            <[control_cylinder][GPSOnOffBase][123]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 6.045 -0.066 0.099 ]>
+                <[matrix3_float64][B0][ 0.94261 0.00014 -0.33391  0.30897 -0.37955 0.87205  -0.12661 -0.92517 -0.35781 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.GPSOnOff]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.002]>
+            >
+            <[control_box][Home][124]
+                <[string8][Type][button]>
+                <[vector3_float64][R0][ 6.075 -0.069 0.2191 ]>
+                <[matrix3_float64][B0][ 0.97412 0.0 -0.22601  0.0 1.0 0.0  0.22601 0.0 0.97412 ]>
+                <[vector3_float64][Direction][ 0.977437 0.0 -0.211229 ]>
+                <[control_message][OnPush][]
+                    <[string8][Message][Home]>
+                    <[string8][Qualifiers][event]>
+                    <[float64][Value][1.0]>
+                >
+                <[vector3_float64][Dimensions][0.002 0.007 0.004]>
+            >
+//Weapons Panel 155
+            <[control_box][BombSelect][155]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 6.063612 0.2584 0.148264 ]>
+                <[matrix3_float64][B0][ 0.94264 0.00001 -0.3338  0.3308 0.13384 0.93416  0.04468 -0.991 0.12616 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][BombSelect]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[vector3_float64][Dimensions][0.016 0.005 0.006]>
+            >
+            <[control_cylinder][BombSelectBase][155]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 6.0717 0.2584 0.1454 ]>
+                <[matrix3_float64][B0][ 0.94259 0.00009 -0.33396  0.33094 0.13383 0.93411  0.04478 -0.991 0.12612 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][BombSelect]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.002]>
+            >
+            <[control_box][BombRelease][156]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 6.063612 0.2334 0.148264 ]>
+                <[matrix3_float64][B0][ 0.94264 0.00001 -0.3338  0.3308 0.13384 0.93416  0.04468 -0.991 0.12616 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][BombRelease]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[vector3_float64][Dimensions][0.016 0.005 0.006]>
+            >
+            <[control_cylinder][BombReleaseBase][156]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 6.0717 0.2334 0.1454 ]>
+                <[matrix3_float64][B0][ 0.94259 0.00009 -0.33396  0.33094 0.13383 0.93411  0.04478 -0.991 0.12612 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][BombRelease]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.002]>
+            >
+            <[control_box][Cam][157]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 6.067312 0.1666 0.151164 ]>
+                <[matrix3_float64][B0][ 0.94264 0.00001 -0.3338  0.3308 0.13384 0.93416  0.04468 -0.991 0.12616 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Cam]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[vector3_float64][Dimensions][0.016 0.005 0.006]>
+            >
+            <[control_cylinder][CamBase][157]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 6.0754 0.1666 0.1483 ]>
+                <[matrix3_float64][B0][ 0.94259 0.00009 -0.33396  0.33094 0.13383 0.93411  0.04478 -0.991 0.12612 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Cam]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.002]>
+            >
+            <[control_box][IRReticle][158]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 6.061112 0.1398 0.136664 ]>
+                <[matrix3_float64][B0][ 0.94264 0.00001 -0.3338  0.3308 0.13384 0.93416  0.04468 -0.991 0.12616 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][IRReticle]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[vector3_float64][Dimensions][0.016 0.005 0.006]>
+            >
+            <[control_cylinder][IRReticleBase][158]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 6.0692 0.1398 0.1338 ]>
+                <[matrix3_float64][B0][ 0.94259 0.00009 -0.33396  0.33094 0.13383 0.93411  0.04478 -0.991 0.12612 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][IRReticle]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.002]>
+            >
+            <[control_box][Gun][159]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 6.080587 0.216 0.2095 ]>
+                <[matrix3_float64][B0][ 0.94264 0.00001 -0.3338  0.3308 0.13384 0.93416  0.04468 -0.991 0.12616 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Gun]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[vector3_float64][Dimensions][0.016 0.005 0.006]>
+            >
+            <[control_cylinder][GunBase][159]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 6.0868 0.216 0.2073 ]>
+                <[matrix3_float64][B0][ 0.94259 0.00009 -0.33396  0.33094 0.13383 0.93411  0.04478 -0.991 0.12612 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Gun]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.002]>
+            >
+            <[control_box][Sight][160]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 6.084987 0.1607 0.2369 ]>
+                <[matrix3_float64][B0][ 0.94264 0.00001 -0.3338  0.3308 0.13384 0.93416  0.04468 -0.991 0.12616 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Sight]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[vector3_float64][Dimensions][0.016 0.005 0.006]>
+            >
+            <[control_cylinder][SightBase][160]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 6.0912 0.1607 0.2347 ]>
+                <[matrix3_float64][B0][ 0.94259 0.00009 -0.33396  0.33094 0.13383 0.93411  0.04478 -0.991 0.12612 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Sight]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.002]>
+            >
+            <[control_box][Rounds][161]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 6.089007 0.237496 0.256873 ]>
+                <[matrix3_float64][B0][ 0.89952 -0.25676 -0.35347  0.33109 -0.12725 0.93498  -0.28504 -0.95806 -0.02946 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Rounds]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[vector3_float64][Dimensions][0.016 0.005 0.006]>
+            >
+            <[control_cylinder][RoundsBase][161]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 6.0912 0.1607 0.2347 ]>
+                <[matrix3_float64][B0][ 0.89959 -0.25664 -0.35339  0.33104 -0.12712 0.93501  -0.28488 -0.95811 -0.0294 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Rounds]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.002]>
+            >
+//Antenna Clearance 162
+            <[control_cylinder][AntennaAdjustKnob][162]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 6.0795 -0.2082 0.1832 ]>
+                <[matrix3_float64][B0][ -0.97744 -0.00001 0.2112  0.2112 0.00011 0.97744  -0.00004 1.0 -0.00011 ]>
+                <[vector3_float64][Direction][ 0.977437 0.0 -0.211229 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][AntennaAdjust]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][0.05]>
+                >
+                <[float64][Radius][0.006]>
+                <[float64][Length][0.019]>
+            >
+            <[control_cylinder][AntennaClearance][163]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 6.07239 -0.14 0.187909 ]>
+                <[matrix3_float64][B0][ -0.97744 -0.00002 0.21123  0.21123 0.00021 0.97744  -0.00007 1.0 -0.0002 ]>
+                <[vector3_float64][Direction][ 0.977437 0.0 -0.211229 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][AntennaClearance]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1]>
+                >
+                <[float64][Radius][0.01]>
+                <[float64][Length][0.012]>
+            >
+//Antenna Left
+//Special Weapons 150
+            <[control_box][SpecialHiToss][150]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 6.02648 -0.0463 -0.050244 ]>
+                <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 -0.22609 -0.97411  0.0 0.97411 -0.22609 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][SpecialHiToss]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[vector3_float64][Dimensions][0.016 0.005 0.006]>
+            >
+            <[control_cylinder][SpecialHiTossBase][150]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 6.0338 -0.046341 -0.050425 ]>
+                <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 -0.22613 -0.9741  0.0 0.9741 -0.22613 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][SpecialHiToss]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.002]>
+            >
+             <[control_cylinder][SpecialSelector][151]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 6.0335 0.0016 -0.0143 ]>
+                <[matrix3_float64][B0][ -0.97411 -0.00001 0.2261  -0.2261 -0.00005 -0.97411  0.00002 -1.0 0.00005 ]>
+                <[vector3_float64][Direction][ 0.977437 0.0 -0.211229 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][SpecialSelector]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][0.7]>
+                >
+                <[float64][Radius][0.01]>
+                <[float64][Length][0.012]>
+            >
+            <[control_cylinder][SpecialJettison][152]
+                <[string8][Type][button]>
+                <[vector3_float64][R0][ 6.028463 0.044926 -0.054952 ]>
+                <[matrix3_float64][B0][ -0.98507 -0.00077 0.17218  -0.16799 0.22356 -0.9601  -0.03776 -0.97469 -0.22035 ]>
+                <[vector3_float64][Direction][ 0.977437 0.0 -0.211229 ]>
+                <[control_message][OnPush][]
+                    <[string8][Message][SpecialJettison]>
+                    <[string8][Qualifiers][event]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.004]>
+                <[float64][Length][0.002]>
+            >
+//Landing Gear and flaps
+            <[control_input][FlapLever][]
+                <[uint32][InputID][ServoFlapLever.Output]>
+                <[float64][Scaling][1.2]>
+            >
+            <[control_rotation][FlapLeverRotation][]
+                <[string8][Input][FlapLever.Output]>
+                <[tmvector3d][Axis][ 0.0 -1.0 0.0 ]>
+                <[tmvector3d][Pivot][ 5.8415 0.4402 0.0319 ]>
+            >
+            <[control_box][FlapLeverPilot][104]
+                <[string8][Type][lever]>
+                <[vector3_float64][R0][ 5.815368 0.4402 0.093152 ]>
+                <[matrix3_float64][B0][ 0.47514 0.0 -0.87991  0.0 1.0 0.0  0.87991 0.0 0.47514 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepDistance][0.03]>
+                <[string8][InputTransform][FlapLeverRotation.Output]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.Flaps]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[vector3_float64][Dimensions][0.03 0.02 0.014]>
+            >
+            <[control_cylinder_clipped][FlapLeverPilotBase][104]
+                <[string8][Type][lever base]>
+                <[vector3_float64][R0][ 5.8415 0.4402 0.0319 ]>
+                <[matrix3_float64][B0][ 0.0 1.0 0.0  1.0 0.0 0.0  0.0 0.0 1.0 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.Flaps]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.055]>
+                <[float64][InnerRadius][0.05]>
+                <[float64][Length][0.02]>
+                <[float64][Start][1.4]>
+                <[float64][End][3.4]>
+            >
+
+
+
+//Electrical 50
+            <[control_box][BatteryMasterSwitch][60]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 6.062195 0.286724 0.139149 ]>
+                <[matrix3_float64][B0][ -0.98585 -0.10371 0.1317  -0.06113 0.95397 0.29362  -0.15609 0.28141 -0.94681 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Electrical.Battery]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[vector3_float64][Dimensions][0.016 0.005 0.006]>
+            >
+            <[control_cylinder][BatteryMasterSwitchBase][60]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 6.0682 0.2866 0.1386 ]>
+                <[matrix3_float64][B0][ -0.19584 -0.93544 -0.29427  -0.97766 0.16291 0.13278  -0.07627 0.3137 -0.94646 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Electrical.Battery]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.002]>
+            >
+            <[control_cylinder][OneGeneratorSwitch][32]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.992119 -0.33378 0.038328 ]>
+                <[matrix3_float64][B0][ -0.93788 0.01116 0.34679  0.34487 -0.07998 0.93524  0.03817 0.99673 0.07116 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Electric.LeftGenerator]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.005]>
+                <[float64][Length][0.02]>
+            >
+            <[control_cylinder][OneGeneratorSwitchBase][61]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 6.0022 -0.3339 0.0346 ]>
+                <[matrix3_float64][B0][ -0.93788 0.01116 0.34679  0.34487 -0.07998 0.93524  0.03817 0.99673 0.07116 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Electric.LeftGenerator]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.01]>
+                <[float64][Length][0.002]>
+            >
+            <[control_cylinder][TwoGeneratorSwitch][32]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.993295 -0.356195 0.037756 ]>
+                <[matrix3_float64][B0][ -0.93788 0.01116 0.34679  0.34487 -0.07998 0.93524  0.03817 0.99673 0.07116 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Electric.RightGenerator]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.005]>
+                <[float64][Length][0.02]>
+            >
+            <[control_cylinder][TwoGeneratorSwitchBase][62]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 6.0021 -0.3563 0.0345 ]>
+                <[matrix3_float64][B0][ -0.93788 0.01116 0.34679  0.34487 -0.07998 0.93524  0.03817 0.99673 0.07116 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Electric.RightGenerator]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.01]>
+                <[float64][Length][0.002]>
+            >
+// Right Console
+//Anti Ice
+            <[control_box][PitotHeatSwitch][6]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.507883 -0.466879 0.032974 ]>
+                <[matrix3_float64][B0][ 0.18809 -0.28779 -0.93904  0.98188 0.07783 0.17281  0.02335 -0.95452 0.29722 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.PitotHeat]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[vector3_float64][Dimensions][0.016 0.005 0.006]>
+            >
+            <[control_cylinder][PitotHeatSwitchBase][6]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.5094 -0.4692 0.0254 ]>
+                <[matrix3_float64][B0][ 0.18801 -0.28787 -0.93903  0.98189 0.07764 0.17279  0.02317 -0.95452 0.29725 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.PitotHeat]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.002]>
+            >
+
+//Oxygen Panel    190
+            <[control_cylinder_clipped][OPure][190]
+                <[string8][Type][wheel]>
+                <[vector3_float64][R0][ 5.913053 -0.383681 -0.056821 ]>
+                <[matrix3_float64][B0][ 0.02335 -0.95454 0.29717  -0.17115 0.28904 0.94189  -0.98497 -0.07285 -0.15663 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnStep][]
+                    <[string8][Message][OPure]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.032]>
+                <[float64][InnerRadius][0.026]>
+                <[float64][Length][0.004]>
+                <[float64][Start][-0.6]>
+                <[float64][End][0.2]>
+            >
+            <[control_cylinder_clipped][OVolume][191]
+                <[string8][Type][wheel]>
+                <[vector3_float64][R0][ 5.912453 -0.347181 -0.071021 ]>
+                <[matrix3_float64][B0][ 0.02335 -0.95454 0.29717  -0.17115 0.28904 0.94189  -0.98497 -0.07285 -0.15663 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnStep][]
+                    <[string8][Message][OVolume]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.032]>
+                <[float64][InnerRadius][0.026]>
+                <[float64][Length][0.004]>
+                <[float64][Start][-0.6]>
+                <[float64][End][0.2]>
+            >
+            <[control_cylinder_clipped][OOnOff][192]
+                <[string8][Type][wheel]>
+                <[vector3_float64][R0][ 5.912053 -0.432181 -0.040821 ]>
+                <[matrix3_float64][B0][ 0.02335 -0.95454 0.29717  -0.17115 0.28904 0.94189  -0.98497 -0.07285 -0.15663 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnStep][]
+                    <[string8][Message][OOnOff]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.032]>
+                <[float64][InnerRadius][0.026]>
+                <[float64][Length][0.004]>
+                <[float64][Start][-0.6]>
+                <[float64][End][0.2]>
+            >
+
+//Tacan
+            <[control_cylinder][TCNChannelSelect10][31]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.857254 -0.358034 -0.029858 ]>
+                <[matrix3_float64][B0][ 0.0724 0.29805 0.9518  -0.99654 -0.01741 0.08126  0.04079 -0.95439 0.29576 ]>
+                <[vector3_float64][Direction][ -0.07242 -0.29814 -0.95177 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Navigation.TACAN10Channel]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][0.1]>
+                >
+                <[float64][Radius][0.02]>
+                <[float64][Length][0.01]>
+            >
+            <[control_cylinder][TCNChannelSelect1][31]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.8557 -0.3552 -0.0234 ]>
+                <[matrix3_float64][B0][ 0.07242 0.29806 0.95179  -0.99654 -0.01735 0.08125  0.04073 -0.95439 0.29578 ]>
+                <[vector3_float64][Direction][ -0.07242 -0.29814 -0.95177 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Navigation.TACAN1Channel]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][0.01]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.022]>
+            >
+            <[control_cylinder][TCNModeSelect][31]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.87 -0.4255 -0.0048 ]>
+                <[matrix3_float64][B0][ 0.07241 0.29809 0.95179  0.9971 0.00075 -0.0761  -0.0234 0.95454 -0.29717 ]>
+                <[vector3_float64][Direction][ -0.07242 -0.29814 -0.95177 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][TCNModeSelect]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.01]>
+                <[float64][Length][0.012]>
+            >
+            <[control_cylinder][TCNVolume][31]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.8367 -0.4215 -0.0171 ]>
+                <[matrix3_float64][B0][ 0.07241 0.29809 0.95179  0.9971 0.00075 -0.0761  -0.0234 0.95454 -0.29717 ]>
+                <[vector3_float64][Direction][ -0.07242 -0.29814 -0.95177 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][TCNVolume]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][0.1]>
+                >
+                <[float64][Radius][0.01]>
+                <[float64][Length][0.012]>
+            >
+//IFF 40 50
+            <[control_cylinder][IFFM1][40]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.7447 -0.3524 -0.0291 ]>
+                <[matrix3_float64][B0][ 0.0234 -0.9545 0.2972  0.9819 0.0778 0.1728  -0.1881 0.2878 0.939 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][IFF.M1]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.003]>
+                <[float64][Length][0.017]>
+            >
+            <[control_cylinder][IFFM1Base][40]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.7447 -0.3524 -0.0291 ]>
+                <[matrix3_float64][B0][ 0.0234 -0.9545 0.2972  0.9819 0.0778 0.1728  -0.1881 0.2878 0.939 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][IFF.M1]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.006]>
+                <[float64][Length][0.002]>
+            >
+            <[control_cylinder][IFFM2][41]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.7452 -0.3723 -0.0229 ]>
+                <[matrix3_float64][B0][ 0.0234 -0.9545 0.2972  0.9819 0.0778 0.1728  -0.1881 0.2878 0.939 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][IFF.M2]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.003]>
+                <[float64][Length][0.017]>
+            >
+            <[control_cylinder][IFFM2Base][41]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.7452 -0.3723 -0.0229 ]>
+                <[matrix3_float64][B0][ 0.0234 -0.9545 0.2972  0.9819 0.0778 0.1728  -0.1881 0.2878 0.939 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][IFF.M2]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.006]>
+                <[float64][Length][0.002]>
+            >
+            <[control_cylinder][IFFM3][42]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.7461 -0.4103 -0.0111 ]>
+                <[matrix3_float64][B0][ 0.0234 -0.9545 0.2972  0.9819 0.0778 0.1728  -0.1881 0.2878 0.939 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][IFF.M3]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.003]>
+                <[float64][Length][0.017]>
+            >
+            <[control_cylinder][IFFM3Base][42]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.7461 -0.4103 -0.0111 ]>
+                <[matrix3_float64][B0][ 0.0234 -0.9545 0.2972  0.9819 0.0778 0.1728  -0.1881 0.2878 0.939 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][IFF.M3]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.006]>
+                <[float64][Length][0.002]>
+            >
+            <[control_cylinder][IFFM3A][43]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.7457 -0.3925 -0.0166 ]>
+                <[matrix3_float64][B0][ 0.0234 -0.9545 0.2972  0.9819 0.0778 0.1728  -0.1881 0.2878 0.939 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][IFF.M3A]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.003]>
+                <[float64][Length][0.017]>
+            >
+            <[control_cylinder][IFFM3ABase][43]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.7457 -0.3925 -0.0166 ]>
+                <[matrix3_float64][B0][ 0.0234 -0.9545 0.2972  0.9819 0.0778 0.1728  -0.1881 0.2878 0.939 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][IFF.M3A]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.006]>
+                <[float64][Length][0.002]>
+            >
+            <[control_cylinder][IFFMIC][44]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.775 -0.4015 -0.016 ]>
+                <[matrix3_float64][B0][ 0.0234 -0.9545 0.2972  0.9819 0.0778 0.1728  -0.1881 0.2878 0.939 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][IFF.MIC]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.003]>
+                <[float64][Length][0.017]>
+            >
+            <[control_cylinder][IFFMICBase][44]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.775 -0.4015 -0.016 ]>
+                <[matrix3_float64][B0][ 0.0234 -0.9545 0.2972  0.9819 0.0778 0.1728  -0.1881 0.2878 0.939 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][IFF.MIC]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.006]>
+                <[float64][Length][0.002]>
+            >
+            <[control_cylinder][IFFRadTest][45]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.7467 -0.4343 -0.0036 ]>
+                <[matrix3_float64][B0][ 0.0234 -0.9545 0.2972  0.9819 0.0778 0.1728  -0.1881 0.2878 0.939 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][IFF.RadTest]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.003]>
+                <[float64][Length][0.017]>
+            >
+            <[control_cylinder][IFFRadTestBase][45]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.7467 -0.4343 -0.0036 ]>
+                <[matrix3_float64][B0][ 0.0234 -0.9545 0.2972  0.9819 0.0778 0.1728  -0.1881 0.2878 0.939 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][IFF.RadTest]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.006]>
+                <[float64][Length][0.002]>
+            >
+            <[control_cylinder][IFFOnOff][46]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.7755 -0.3628 -0.0282 ]>
+                <[matrix3_float64][B0][ 0.0234 -0.9545 0.2972  0.9819 0.0778 0.1728  -0.1881 0.2878 0.939 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][IFF.OnOff]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.004]>
+                <[float64][Length][0.017]>
+            >
+            <[control_cylinder][IFFOnOffBase][46]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.7755 -0.3628 -0.0282 ]>
+                <[matrix3_float64][B0][ 0.0234 -0.9545 0.2972  0.9819 0.0778 0.1728  -0.1881 0.2878 0.939 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][IFF.OnOff]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.008]>
+                <[float64][Length][0.002]>
+            >
+            <[control_cylinder][IFFAudio][47]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.7442 -0.3306 -0.0359 ]>
+                <[matrix3_float64][B0][ 0.0234 -0.9545 0.2972  0.9819 0.0778 0.1728  -0.1881 0.2878 0.939 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][IFF.Audio]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.004]>
+                <[float64][Length][0.017]>
+            >
+            <[control_cylinder][IFFAudioBase][47]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.7442 -0.3306 -0.0359 ]>
+                <[matrix3_float64][B0][ 0.0234 -0.9545 0.2972  0.9819 0.0778 0.1728  -0.1881 0.2878 0.939 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][IFF.Audio]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.008]>
+                <[float64][Length][0.002]>
+            >
+            <[control_cylinder][Ident][48]
+                <[string8][Type][button]>
+                <[vector3_float64][R0][ 5.8029 -0.3289 -0.0423 ]>
+                <[matrix3_float64][B0][ -0.0013 -0.9547 0.2975  0.9974 -0.0226 -0.0684  0.072 0.2966 0.9523 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 -1.0 ]>
+                <[control_message][OnPush][]
+                    <[string8][Message][Ident]>
+                    <[string8][Qualifiers][event]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.004]>
+                <[float64][Length][0.002]>
+            >
+            <[control_cylinder][IFFCode100][49]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.7062 -0.3456 -0.0214 ]>
+                <[matrix3_float64][B0][ -0.07247 -0.29809 -0.95178  -0.99653 -0.01742 0.08133  -0.04083 0.95438 -0.29579 ]>
+                <[vector3_float64][Direction][ -0.07242 -0.29814 -0.95177 ]>
+                <[float64][StepAngle][0.5]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][IFF.Code100]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.01]>
+                <[float64][Length][0.015]>
+            >
+            <[control_cylinder][IFFCode10][50]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.7071 -0.3789 -0.011 ]>
+                <[matrix3_float64][B0][ -0.07247 -0.29809 -0.95178  -0.99653 -0.01742 0.08133  -0.04083 0.95438 -0.29579 ]>
+                <[vector3_float64][Direction][ -0.07242 -0.29814 -0.95177 ]>
+                <[float64][StepAngle][0.5]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][IFF.Code10]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.01]>
+                <[float64][Length][0.015]>
+            >
+            <[control_cylinder][IFFCode1][51]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.7079 -0.4123 -0.0006 ]>
+                <[matrix3_float64][B0][ -0.07247 -0.29809 -0.95178  -0.99653 -0.01742 0.08133  -0.04083 0.95438 -0.29579 ]>
+                <[vector3_float64][Direction][ -0.07242 -0.29814 -0.95177 ]>
+                <[float64][StepAngle][0.5]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][IFF.Code1]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.01]>
+                <[float64][Length][0.015]>
+            >
+            <[control_cylinder][IFFMaster][52]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.7779 -0.4251 -0.0011 ]>
+                <[matrix3_float64][B0][ 0.07022 0.29855 0.95181  0.99067 0.09083 -0.10158  -0.11678 0.95006 -0.28939 ]>
+                <[vector3_float64][Direction][ -0.07242 -0.29814 -0.95177 ]>
+                <[float64][StepAngle][0.5]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][IFF.Master]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.01]>
+                <[float64][Length][0.015]>
+            >
+            <[control_cylinder][IFFReply][52]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.7708 -0.338 -0.0295 ]>
+                <[matrix3_float64][B0][ 0.07242 0.2981 0.95178  0.62301 0.73169 -0.27657  -0.77886 0.613 -0.13273 ]>
+                <[vector3_float64][Direction][ -0.07242 -0.29814 -0.95177 ]>
+                <[float64][StepAngle][0.5]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][IFF.Reply]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.01]>
+                <[float64][Length][0.015]>
+            >
+//DCU 9A 180
+             <[control_cylinder][DCU9][180]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.637 -0.4083 0.005 ]>
+                <[matrix3_float64][B0][ -0.07246 -0.29811 -0.95178  0.58322 0.76146 -0.2829  0.80907 -0.5756 0.11869 ]>
+                <[vector3_float64][Direction][ -0.07242 -0.29814 -0.95177 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][DCU9]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.02]>
+                <[float64][Length][0.012]>
+            >
+            <[control_cylinder][DCU9Lamp][182]
+                <[string8][Type][button]>
+                <[vector3_float64][R0][ 5.609783 -0.337535 -0.02056 ]>
+                <[matrix3_float64][B0][ -0.07198 -0.29671 -0.95225  0.99741 -0.02249 -0.06839  -0.00112 -0.9547 0.29756 ]>
+                <[vector3_float64][Direction][ -0.07242 -0.29814 -0.95177 ]>
+                <[control_message][OnPush][]
+                    <[string8][Message][DCU9Lamp]>
+                    <[string8][Qualifiers][event]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.01]>
+            >
+
+//PHI Nav 200
+            <[control_cylinder][Arrow][200]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.4099 -0.4103 0.0203 ]>
+                <[matrix3_float64][B0][ -0.07241 -0.29814 -0.95177  -0.02333 0.95452 -0.29723  0.9971 0.00069 -0.07607 ]>
+                <[vector3_float64][Direction][ -0.07242 -0.29814 -0.95177 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Arrow]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.015]>
+            >
+            <[control_cylinder][Spd][201]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.4093 -0.3858 0.0127 ]>
+                <[matrix3_float64][B0][ -0.07242 -0.29814 -0.95177  -0.02337 0.95452 -0.29722  0.9971 0.00072 -0.07609 ]>
+                <[vector3_float64][Direction][ -0.07242 -0.29814 -0.95177 ]>
+                <[float64][StepAngle][1.0]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Spd]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.015]>
+            >
+//Compass 185
+            <[control_box][DgMag][185]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.353769 -0.390903 0.022219 ]>
+                <[matrix3_float64][B0][ -0.32795 -0.28821 -0.89966  0.94441 -0.07648 -0.31976  0.02335 -0.95451 0.29727 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][DgMag]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[vector3_float64][Dimensions][0.016 0.005 0.006]>
+            >
+            <[control_cylinder][DGMagBase][185]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.3507 -0.3936 0.0138 ]>
+                <[matrix3_float64][B0][ -0.32799 -0.28811 -0.89968  0.94439 -0.07649 -0.3198  0.02332 -0.95454 0.29717 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][DgMag]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.002]>
+            >
+//Inertial Nav
+            <[control_cylinder][INSSelector][199]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.737 -0.4707 0.0155 ]>
+                <[matrix3_float64][B0][ 0.07242 0.29815 0.95177  0.95708 0.24772 -0.15043  -0.28062 0.92181 -0.26741 ]>
+                <[vector3_float64][Direction][ -0.07242 -0.29814 -0.95177 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][INSSelector]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.01]>
+                <[float64][Length][0.012]>
+            >
+//Cockpit Temp 200
+            <[control_box][SuitSwitch][200]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.508083 -0.483979 0.038274 ]>
+                <[matrix3_float64][B0][ 0.18809 -0.28779 -0.93904  0.98188 0.07783 0.17281  0.02335 -0.95452 0.29722 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Suit]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[vector3_float64][Dimensions][0.016 0.005 0.006]>
+            >
+            <[control_cylinder][SuitSwitchBase][200]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.5096 -0.4863 0.0307 ]>
+                <[matrix3_float64][B0][ 0.18801 -0.28787 -0.93903  0.98189 0.07764 0.17279  0.02317 -0.95452 0.29725 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Suit]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.002]>
+            >
+//Lights Panel    90
+            <[control_cylinder][InstrumentsDim][90]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.475395 -0.481665 0.039085 ]>
+                <[matrix3_float64][B0][ 0.07247 0.29813 0.95177  0.9971 0.00068 -0.07613  -0.02335 0.95453 -0.29721 ]>
+                <[vector3_float64][Direction][ -0.07242 -0.29814 -0.95177 ]>
+                <[float64][StepAngle][0.25]>
+            <[control_message][OnRotate][]
+                    <[string8][Message][Controls.Lighting.Instruments]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.014]>
+                <[float64][Length][0.02]>
+            >
+            <[control_cylinder][PanelDim][91]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.436195 -0.497665 0.046885 ]>
+                <[matrix3_float64][B0][ 0.07253 0.29803 0.9518  0.99709 0.00078 -0.07623  -0.02346 0.95455 -0.29711 ]>
+                <[vector3_float64][Direction][ -0.07242 -0.29814 -0.95177 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Controls.Lighting.Panel]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.014]>
+                <[float64][Length][0.02]>
+            >
+            <[control_cylinder][ConsoleDim][92]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.361995 -0.483065 0.048285 ]>
+                <[matrix3_float64][B0][ 0.07253 0.29803 0.9518  0.99709 0.00078 -0.07623  -0.02346 0.95455 -0.29711 ]>
+                <[vector3_float64][Direction][ -0.07242 -0.29814 -0.95177 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Controls.Lighting.Console]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.014]>
+                <[float64][Length][0.02]>
+            >
+            <[control_cylinder][LandingLight][84]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 6.025538 0.377899 0.125653 ]>
+                <[matrix3_float64][B0][ 0.94755 0.0001 -0.31961  0.30873 -0.25893 0.91523  -0.08267 -0.96589 -0.24538 ]>
+                <[vector3_float64][Direction][ 0.28574 -0.01793 0.95814 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.Lighting.Landing]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.003]>
+                <[float64][Length][0.015]>
+            >
+            <[control_cylinder][LandingLightBase][92]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 6.0337 0.3779 0.1229 ]>
+                <[matrix3_float64][B0][ 0.94758 -0.00016 -0.31952  0.31952 0.0 0.94758  -0.00015 -1.0 0.00005 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.Lighting.Landing]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.01]>
+                <[float64][Length][0.002]>
+            >
+
+            <[control_cylinder][NAVLightsSteadyFlash][93]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.390213 -0.489573 0.049767 ]>
+                <[matrix3_float64][B0][ -0.07237 -0.29814 -0.95178  0.99711 0.00068 -0.07603  0.02332 -0.95452 0.29723 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.Lighting.Navigation]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.003]>
+                <[float64][Length][0.015]>
+            >
+            <[control_cylinder][NAVLightsSteadyFlashBase][93]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.3896 -0.4921 0.0417 ]>
+                <[matrix3_float64][B0][ -0.07244 -0.29803 -0.95181  0.9971 0.00077 -0.07613  0.02342 -0.95456 0.29711 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.Lighting.Navigation]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.006]>
+                <[float64][Length][0.002]>
+            >
+            <[control_cylinder][NAVLightsDim][94]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.389713 -0.469573 0.043567 ]>
+                <[matrix3_float64][B0][ -0.07237 -0.29814 -0.95178  0.99711 0.00068 -0.07603  0.02332 -0.95452 0.29723 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.Lighting.NavigationDim]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.003]>
+                <[float64][Length][0.015]>
+            >
+            <[control_cylinder][NAVLightsDimBase][94]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.3891 -0.4721 0.0355 ]>
+                <[matrix3_float64][B0][ -0.07244 -0.29803 -0.95181  0.9971 0.00077 -0.07613  0.02342 -0.95456 0.29711 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.Lighting.NavigationDim]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.006]>
+                <[float64][Length][0.002]>
+            >
+            <[control_cylinder][StrobeLights][95]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.987698 0.315665 0.343057 ]>
+                <[matrix3_float64][B0][ 0.59047 0.76202 0.26583  0.80602 -0.54012 -0.24207  -0.04089 0.3572 -0.93313 ]>
+                <[vector3_float64][Direction][ 0.29225 0.00772 0.95631 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.Lighting.Strobe]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.003]>
+                <[float64][Length][0.015]>
+            >
+            <[control_cylinder][StrobeLightsBase][95]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.9916 0.3207 0.3448 ]>
+                <[matrix3_float64][B0][ 0.59194 0.76037 0.26729  0.80498 -0.54121 -0.24309  -0.04018 0.35905 -0.93245 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.Lighting.Strobe]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.01]>
+                <[float64][Length][0.002]>
+            >
+//Ground Speed Selector
+            <[control_cylinder][GroundSpeedTas][88]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.473394 -0.389648 0.21516 ]>
+                <[matrix3_float64][B0][ 0.04103 0.95685 0.28767  0.10627 -0.29046 0.95097  0.99349 -0.00845 -0.1136 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][GroundSpeedTas]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.003]>
+                <[float64][Length][0.015]>
+            >
+            <[control_cylinder][GroundSpeedTasBase][88]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.4731 -0.3965 0.2131 ]>
+                <[matrix3_float64][B0][ 0.04078 0.95688 0.28761  0.10665 -0.29038 0.95095  0.99346 -0.00811 -0.1139 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][GroundSpeedTas]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.006]>
+                <[float64][Length][0.002]>
+            >
+            <[control_cylinder][GroundSpeedSelector][89]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.5695 -0.3978 0.2025 ]>
+                <[matrix3_float64][B0][ -0.04619 -0.95964 -0.2774  0.9597 -0.11969 0.25426  -0.2772 -0.25447 0.9265 ]>
+                <[vector3_float64][Direction][ -0.04619 -0.95964 -0.2774 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][GroundSpeedSelector]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.016]>
+            >
+
+
+
+/////////////Left Console
+        //Engine Start
+            <[control_cylinder][EngineStartSwitch1][80]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 6.061302 0.354399 0.2254 ]>
+                <[matrix3_float64][B0][ 0.94755 0.00013 -0.31962  0.31474 0.17369 0.93315  0.05563 -0.9848 0.16454 ]>
+                <[vector3_float64][Direction][ 0.28574 -0.01793 0.95814 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Starter1]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.003]>
+                <[float64][Length][0.015]>
+            >
+            <[control_cylinder][EngineStartSwitch1Base][80]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 6.0699 0.3544 0.2225 ]>
+                <[matrix3_float64][B0][ 0.94758 -0.00001 -0.31951  0.31465 0.1738 0.93316  0.05552 -0.98478 0.16469 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Starter1]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.01]>
+                <[float64][Length][0.002]>
+            >
+            <[control_cylinder][EngineStartSwitch2][81]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 6.059702 0.332199 0.2262 ]>
+                <[matrix3_float64][B0][ 0.95739 -0.03851 -0.28623  0.28574 -0.01793 0.95814  -0.04203 -0.9991 -0.00616 ]>
+                <[vector3_float64][Direction][ 0.28574 -0.01793 0.95814 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Starter2]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.003]>
+                <[float64][Length][0.015]>
+            >
+            <[control_cylinder][EngineStartSwitch2Base][81]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 6.0683 0.3322 0.2233 ]>
+                <[matrix3_float64][B0][ 0.95757 -0.03838 -0.28562  0.28512 -0.01803 0.95832  -0.04193 -0.9991 -0.00632 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Starter2]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.01]>
+                <[float64][Length][0.002]>
+            >
+            <[control_cylinder][JettisonW][82]
+                <[string8][Type][button]>
+                <[vector3_float64][R0][ 6.073502 0.347885 0.2542 ]>
+                <[matrix3_float64][B0][ 0.94758 0.0 -0.31953  0.31953 0.0 0.94758  0.0 -1.0 0.0 ]>
+                <[vector3_float64][Direction][ 0.94758 0.0 -0.31953 ]>
+                <[control_message][OnPush][]
+                    <[string8][Message][JettisonW]>
+                    <[string8][Qualifiers][event]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.004]>
+                <[float64][Length][0.002]>
+            >
+            <[control_cylinder][AntiSkidSwitch][83]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 6.030902 0.329699 0.1462 ]>
+                <[matrix3_float64][B0][ 0.94755 -0.00004 -0.3196  0.30032 -0.34199 0.89042  -0.10933 -0.9397 -0.32404 ]>
+                <[vector3_float64][Direction][ 0.28574 -0.01793 0.95814 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][AntiSkid]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.003]>
+                <[float64][Length][0.015]>
+            >
+            <[control_cylinder][AntiSkidSwitchBase][83]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 6.0395 0.3297 0.1433 ]>
+                <[matrix3_float64][B0][ 0.94758 -0.00018 -0.31951  0.30017 -0.34213 0.89042  -0.10947 -0.93965 -0.32415 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][AntiSkid]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.01]>
+                <[float64][Length][0.002]>
+            >
+            <[control_cylinder][Duct][84]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 6.024002 0.345299 0.1227 ]>
+                <[matrix3_float64][B0][ 0.94755 0.0001 -0.31961  0.30873 -0.25893 0.91523  -0.08267 -0.96589 -0.24538 ]>
+                <[vector3_float64][Direction][ 0.28574 -0.01793 0.95814 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Duct]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.003]>
+                <[float64][Length][0.015]>
+            >
+            <[control_cylinder][DuctBase][84]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 6.0326 0.3453 0.1198 ]>
+                <[matrix3_float64][B0][ 0.94759 -0.00008 -0.31948  0.30857 -0.25886 0.9153  -0.08278 -0.96592 -0.24526 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Duct]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.01]>
+                <[float64][Length][0.002]>
+            >
+//Radar Control 170
+            <[control_cylinder_clipped][RadarTilt][170]
+                <[string8][Type][wheel]>
+                <[vector3_float64][R0][ 5.715417 0.434145 -0.020565 ]>
+                <[matrix3_float64][B0][ -0.02003 -0.95225 -0.30466  0.0733 -0.3053 0.94943  -0.99711 -0.00331 0.07591 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnStep][]
+                    <[string8][Message][RadarTilt]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.027]>
+                <[float64][InnerRadius][0.026]>
+                <[float64][Length][0.008]>
+                <[float64][Start][-0.7]>
+                <[float64][End][0.7]>
+            >
+            <[control_cylinder_clipped][RadarGain][171]
+                <[string8][Type][wheel]>
+                <[vector3_float64][R0][ 5.714129 0.384515 -0.036483 ]>
+                <[matrix3_float64][B0][ -0.02003 -0.95225 -0.30466  0.0733 -0.3053 0.94943  -0.99711 -0.00331 0.07591 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnStep][]
+                    <[string8][Message][RadarGain]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.027]>
+                <[float64][InnerRadius][0.026]>
+                <[float64][Length][0.008]>
+                <[float64][Start][-0.7]>
+                <[float64][End][0.7]>
+            >
+            <[control_cylinder][RadarSet][172]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.656085 0.419132 0.007197 ]>
+                <[matrix3_float64][B0][ -0.00754 -0.27688 0.96088  0.05967 0.95907 0.27682  -0.99819 0.05942 0.00929 ]>
+                <[vector3_float64][Direction][ -0.06332 0.29694 -0.95279 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][RadarSet]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.01]>
+                <[float64][Length][0.016]>
+            >
+            <[control_sphere][RadarMode][173]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.673376 0.379431 0.007779 ]>
+                <[matrix3_float64][B0][ 0.2807 0.9198 0.2741  -0.957 0.2465 0.1531  0.0732 -0.3053 0.9494 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][RadarMode]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.012]>
+            >
+            <[control_box][RadarRange][174]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.736886 0.39365 -0.004017 ]>
+                <[matrix3_float64][B0][ -0.08538 0.31755 -0.94439  0.07229 0.94733 0.31201  0.99372 -0.04163 -0.10383 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][RadarRange]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[vector3_float64][Dimensions][0.016 0.005 0.006]>
+            >
+            <[control_cylinder][RadarRangeBase][174]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.7362 0.3962 -0.0116 ]>
+                <[matrix3_float64][B0][ -0.08536 0.31747 -0.94442  0.07228 0.94735 0.31192  0.99372 -0.04164 -0.10382 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][RadarRange]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.002]>
+            >
+            <[control_box][RadarSystem][175]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.652258 0.334245 -0.018153 ]>
+                <[matrix3_float64][B0][ 0.00627 0.41465 -0.90996  0.99994 -0.01103 0.00186  -0.00926 -0.90991 -0.41469 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][RadarSystem]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[vector3_float64][Dimensions][0.016 0.006 0.006]>
+            >
+            <[control_cylinder][RadarSystemBase][175]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.6523 0.337 -0.0242 ]>
+                <[matrix3_float64][B0][ 0.00636 0.41447 -0.91004  0.99994 -0.01092 0.00201  -0.0091 -0.91 -0.41452 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][RadarSystem]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.002]>
+            >
+            <[control_box][RadarTT][176]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.6976 0.439969 0.011957 ]>
+                <[matrix3_float64][B0][ -0.02376 -0.28173 0.9592  0.99967 -0.01562 0.02017  0.0093 0.95937 0.28201 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][RadarTT]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[vector3_float64][Dimensions][0.016 0.005 0.006]>
+            >
+            <[control_cylinder][RadarTTBase][176]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.6976 0.442149 0.0045 ]>
+                <[matrix3_float64][B0][ -0.0238 -0.28154 0.95925  0.99967 -0.01565 0.02021  0.00932 0.95942 0.28183 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][RadarTT]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.002]>
+            >
+            <[control_cylinder][RadarCentre][173]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.635756 0.332771 -0.018597 ]>
+                <[matrix3_float64][B0][ -0.12393 0.28585 -0.95023  0.09153 -0.95023 -0.29779  -0.98806 -0.12388 0.0916 ]>
+                <[vector3_float64][Direction][ -0.06332 0.29694 -0.95279 ]>
+                <[float64][StepAngle][0.8]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][RadarCentre]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.008]>
+                <[float64][Length][0.016]>
+            >
+//UHF 103
+            <[control_cylinder][UHF1ManPreGd][103]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.537 0.4221 0.0106 ]>
+                <[matrix3_float64][B0][ -0.00008 -0.2921 0.95639  -0.01217 0.95632 0.29208  -0.99993 -0.01161 -0.00363 ]>
+                <[vector3_float64][Direction][ -0.06332 0.29694 -0.95279 ]>
+                <[float64][StepAngle][0.8]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Communication.UHF1ManPreGd]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.01]>
+                <[float64][Length][0.01]>
+            >
+            <[control_cylinder][UHF1FrequencySelect100][104]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.5797 0.423 0.0152 ]>
+                <[matrix3_float64][B0][ 0.06332 -0.29694 0.95279  -0.00788 0.95453 0.298  -0.99796 -0.02638 0.05811 ]>
+                <[vector3_float64][Direction][ -0.07323 0.30531 -0.94943]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Communication.UHF1FrequencySelect100]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.012]>
+                <[float64][Length][0.016]>
+            >
+            <[control_cylinder][UHF1FrequencySelect10][105]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.5791 0.3958 0.0064 ]>
+                <[matrix3_float64][B0][ 0.06332 -0.29694 0.95279  -0.00788 0.95453 0.298  -0.99796 -0.02638 0.05811 ]>
+                <[vector3_float64][Direction][ -0.06332 0.29694 -0.95279 ]>
+                <[float64][StepAngle][0.2]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Communication.UHF1FrequencySelect10]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.012]>
+                <[float64][Length][0.016]>
+            >
+            <[control_cylinder][UHF1FrequencySelect1][106]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.5784 0.3684 -0.0023 ]>
+                <[matrix3_float64][B0][ 0.06332 -0.29694 0.95279  -0.00788 0.95453 0.298  -0.99796 -0.02638 0.05811 ]>
+                <[vector3_float64][Direction][ -0.06332 0.29694 -0.95279 ]>
+                <[float64][StepAngle][0.2]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Communication.UHF1FrequencySelect1]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.012]>
+                <[float64][Length][0.016]>
+            >
+            <[control_cylinder][UHF1FrequencySelect001][107]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.5777 0.341 -0.0111 ]>
+                <[matrix3_float64][B0][ 0.06332 -0.29694 0.95279  -0.00788 0.95453 0.298  -0.99796 -0.02638 0.05811 ]>
+                <[vector3_float64][Direction][ -0.06332 0.29694 -0.95279 ]>
+                <[float64][StepAngle][0.2]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Communication.UHF1FrequencySelect01]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.012]>
+                <[float64][Length][0.016]>
+            >
+            <[control_cylinder][UHF1ChannelSelect][108]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 6.05026 0.252504 0.333057 ]>
+                <[matrix3_float64][B0][ -0.96076 -0.00334 0.27736  0.27719 -0.04927 0.95955  0.01046 0.99878 0.04826 ]>
+                <[vector3_float64][Direction][ 0.9655 0.0 -0.26039 ]>
+                <[float64][StepAngle][0.2]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Communication.UHF1ChannelSelect]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.013]>
+                <[float64][Length][0.02]>
+            >
+            <[control_cylinder][TrTx][109]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.5352 0.3481 -0.0131 ]>
+                <[matrix3_float64][B0][ -0.00008 -0.2921 0.95639  -0.01217 0.95632 0.29208  -0.99993 -0.01161 -0.00363 ]>
+                <[vector3_float64][Direction][ -0.06332 0.29694 -0.95279 ]>
+                <[float64][StepAngle][0.8]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][TrTx]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.01]>
+                <[float64][Length][0.01]>
+            >
+            <[control_cylinder][UHF1Volume][111]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.532299 0.379516 0.008844 ]>
+                <[matrix3_float64][B0][ -0.00008 -0.2921 0.95639  -0.01217 0.95632 0.29208  -0.99993 -0.01161 -0.00363 ]>
+                <[vector3_float64][Direction][ -0.06332 0.29694 -0.95279 ]>
+                <[float64][StepAngle][0.2]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Communication.UHF1Volume]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.008]>
+                <[float64][Length][0.02]>
+            >
+            <[control_cylinder][UHF1Tone][110]
+                <[string8][Type][button]>
+                <[vector3_float64][R0][ 5.608454 0.385386 -0.007252 ]>
+                <[matrix3_float64][B0][ -0.01349 0.278 -0.96049  0.44274 0.86294 0.24355  0.89655 -0.42196 -0.13472 ]>
+                <[vector3_float64][Direction][ 0.06332 -0.29694 0.95279 ]>
+                <[control_message][OnPush][]
+                    <[string8][Message][Communication.UHF1Tone]>
+                    <[string8][Qualifiers][event]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.003]>
+                <[float64][Length][0.01]>
+            >
+             <[control_cylinder][UHF1Brightness][111]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 6.01982 0.187 0.505988 ]>
+                <[matrix3_float64][B0][ -0.9659 0.0 0.2588  0.0 -1.0 0.0  0.2588 0.0 0.9659 ]>
+                <[vector3_float64][Direction][ 0.9659 0.0 -0.2588 ]>
+                <[float64][StepAngle][0.25]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Controls.Lighting.UHF1Brightness]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.005]>
+                <[float64][Length][0.015]>
+            >
+            <[control_cylinder][UHFVHFSwap][111]
+                <[string8][Type][button]>
+                <[vector3_float64][R0][ 6.013268 0.262791 0.47434 ]>
+                <[matrix3_float64][B0][ -0.9659 0.0 0.2588  0.0 -1.0 0.0  0.2588 0.0 0.9659 ]>
+                <[vector3_float64][Direction][ 0.9659 0.0 -0.2588 ]>
+                <[control_message][OnPush][]
+                    <[string8][Message][UHFVHFSwap]>
+                    <[string8][Qualifiers][event]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.004]>
+                <[float64][Length][0.01]>
+            >
+    //AutoPilot 210
+        //Altitude Hold
+            <[control_cylinder][AltitudeHold][210]
+                <[string8][Type][button]>
+                <[vector3_float64][R0][ 5.479174 0.380199 0.012357 ]>
+                <[matrix3_float64][B0][ 0.18819 0.33817 -0.92208  0.98202 -0.07917 0.17139  -0.01505 -0.93775 -0.34699 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnPush][]
+                    <[string8][Message][Autopilot.AltitudeHold]>
+                    <[string8][Qualifiers][toggle]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.004]>
+                <[float64][Length][0.017]>
+            >
+            <[control_cylinder][AltitudeHoldBase][210]
+                <[string8][Type][button]>
+                <[vector3_float64][R0][ 5.4809 0.3833 0.0039 ]>
+                <[matrix3_float64][B0][ 0.18802 0.33816 -0.92212  0.98205 -0.07903 0.17126  -0.01496 -0.93776 -0.34695 ]>
+                <[control_message][OnPush][]
+                    <[string8][Message][Autopilot.AltitudeHold]>
+                    <[string8][Qualifiers][toggle]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.008]>
+                <[float64][Length][0.002]>
+            >
+        //Heading Turn
+            <[control_cylinder][HeadingTurn][211]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.432035 0.406019 0.016349 ]>
+                <[matrix3_float64][B0][ 0.07323 -0.30531 0.94943  0.02351 0.95225 0.3044  -0.99704 0.00003 0.07691 ]>
+                <[vector3_float64][Direction][ -0.06332 0.29694 -0.95279 ]>
+                <[float64][StepAngle][1.0]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Autopilot.SelectedHeading]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.013]>
+                <[float64][Length][0.007]>
+            >
+        //Heading Hold
+            <[control_cylinder][ApHead][214]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.430635 0.349919 -0.001651 ]>
+                <[matrix3_float64][B0][ 0.07323 -0.30531 0.94943  0.02351 0.95225 0.3044  -0.99704 0.00003 0.07691 ]>
+                <[vector3_float64][Direction][ -0.06332 0.29694 -0.95279 ]>
+                <[float64][StepAngle][1.0]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Autopilot.Heading]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.013]>
+                <[float64][Length][0.007]>
+            >
+
+        //Mach Hold
+            <[control_cylinder][MachS][212]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.478274 0.343699 0.000657 ]>
+                <[matrix3_float64][B0][ 0.18819 0.33817 -0.92208  0.98202 -0.07917 0.17139  -0.01505 -0.93775 -0.34699 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][MachS]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.004]>
+                <[float64][Length][0.017]>
+            >
+            <[control_cylinder][MachSBase][212]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.48 0.3468 -0.0078 ]>
+                <[matrix3_float64][B0][ 0.18802 0.33816 -0.92212  0.98205 -0.07903 0.17126  -0.01496 -0.93776 -0.34695 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][MachS]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.008]>
+                <[float64][Length][0.002]>
+            >
+        //Autopilot Arm
+            <[control_cylinder][AutopilotArm][213]
+                <[string8][Type][button]>
+                <[vector3_float64][R0][ 5.480174 0.417399 0.024257 ]>
+                <[matrix3_float64][B0][ 0.18819 0.33817 -0.92208  0.98202 -0.07917 0.17139  -0.01505 -0.93775 -0.34699 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnPush][]
+                    <[string8][Message][Autopilot.Master]>
+                    <[string8][Qualifiers][toggle]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.004]>
+                <[float64][Length][0.017]>
+            >
+            <[control_cylinder][AutopilotArmBase][213]
+                <[string8][Type][button]>
+                <[vector3_float64][R0][ 5.4819 0.4205 0.0158 ]>
+                <[matrix3_float64][B0][ 0.18802 0.33816 -0.92212  0.98205 -0.07903 0.17126  -0.01496 -0.93776 -0.34695 ]>
+                <[control_message][OnPush][]
+                    <[string8][Message][Autopilot.Master]>
+                    <[string8][Qualifiers][toggle]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.008]>
+                <[float64][Length][0.002]>
+            >
+//VHF Radio
+            <[control_cylinder][NAV1FrequencySmall][100]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.357365 0.362494 0.017625 ]>
+                <[matrix3_float64][B0][ -0.07206 0.34887 -0.9344  0.99704 0.00003 -0.07688  -0.02679 -0.93717 -0.34784 ]>
+                <[vector3_float64][Direction][ -0.06332 0.29694 -0.95279 ]>
+                <[float64][StepAngle][0.3]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Navigation.NAV1Frequency]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.02]>
+            >
+            <[control_cylinder][NAV1FrequencyLarge][101]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 5.358965 0.426794 0.038225 ]>
+                <[matrix3_float64][B0][ -0.07206 0.34887 -0.9344  0.99704 0.00003 -0.07688  -0.02679 -0.93717 -0.34784 ]>
+                <[vector3_float64][Direction][ -0.06332 0.29694 -0.95279 ]>
+                <[float64][StepAngle][0.3]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Navigation.NAV1Frequency]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][20.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.02]>
+            >
+            <[control_cylinder][NAV1Power][102]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.375269 0.321683 -0.000291 ]>
+                <[matrix3_float64][B0][ 0.0556 -0.31006 0.94909  0.99821 -0.00387 -0.05974  0.02219 0.95071 0.30928 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Navigation.NAV1Power]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.003]>
+                <[float64][Length][0.013]>
+            >
+            <[control_cylinder][NAV1PowerBase][102]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.3748 0.3243 -0.0083 ]>
+                <[matrix3_float64][B0][ 0.05545 -0.31008 0.94909  0.99821 -0.00433 -0.05973  0.02263 0.9507 0.30928 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Navigation.NAV1Power]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.006]>
+                <[float64][Length][0.002]>
+            >
+//Aux Trim 180
+            <[control_box][AuxTrimCont][180]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.666915 0.473679 0.026769 ]>
+                <[matrix3_float64][B0][ 0.09934 0.21787 -0.97091  0.9949 -0.03863 0.09312  -0.01722 -0.97521 -0.2206 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][AuxTrimCont]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[vector3_float64][Dimensions][0.016 0.005 0.006]>
+            >
+            <[control_cylinder][AuxTrimContBase][180]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.6677 0.4754 0.01915 ]>
+                <[matrix3_float64][B0][ 0.09944 0.21783 -0.97091  0.9949 -0.03848 0.09327  -0.01704 -0.97523 -0.22055 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][AuxTrimCont]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.002]>
+            >
+            <[control_box][AuxTrimStick][181]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.730151 0.481591 0.023518 ]>
+                <[matrix3_float64][B0][ -0.32867 0.29489 -0.89723  0.94415 0.07897 -0.31991  -0.02348 -0.95226 -0.30437 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][AuxTrimStick]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[vector3_float64][Dimensions][0.016 0.005 0.006]>
+            >
+            <[control_cylinder][AuxTrimStickBase][181]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.7278 0.4837 0.0171 ]>
+                <[matrix3_float64][B0][ -0.32885 0.2952 -0.89706  0.94408 0.0789 -0.32012  -0.02372 -0.95217 -0.30464 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][AuxTrimStick]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.002]>
+            >
+            <[control_box][StickTrimCover][182]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.715955 0.482921 0.022199 ]>
+                <[matrix3_float64][B0][ 0.3192 -0.29571 0.90037  0.9474 0.07601 -0.3109  0.0235 0.95225 0.30442 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][StickTrimCover]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[vector3_float64][Dimensions][0.02 0.01 0.012]>
+            >
+//Fuel
+            <[control_cylinder][FuelShutOff][32]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.628244 0.482259 0.030854 ]>
+                <[matrix3_float64][B0][ 0.00903 0.28064 -0.95977  0.9156 0.38353 0.12076  0.40199 -0.87986 -0.25349 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.FuelShutOff]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.005]>
+                <[float64][Length][0.02]>
+            >
+            <[control_cylinder][FuelShutOffBase][32]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.6283 0.484 0.0249 ]>
+                <[matrix3_float64][B0][ 0.00903 0.28058 -0.95979  0.91555 0.38365 0.12077  0.40211 -0.87982 -0.25342 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.FuelShutOff]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.015]>
+                <[float64][Length][0.003]>
+            >
+            <[control_box][FuelPylon][34]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.570374 0.47309 0.033828 ]>
+                <[matrix3_float64][B0][ -0.32867 0.29489 -0.89723  0.94415 0.07897 -0.31991  -0.02348 -0.95226 -0.30437 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][FuelPylon]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[vector3_float64][Dimensions][0.016 0.005 0.006]>
+            >
+            <[control_cylinder][FuelPylonBase][34]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.5678 0.4754 0.0268 ]>
+                <[matrix3_float64][B0][ -0.32885 0.2952 -0.89706  0.94408 0.0789 -0.32012  -0.02372 -0.95217 -0.30464 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][FuelPylon]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.002]>
+            >
+             <[control_cylinder][FuelSelector][33]
+                <[string8][Type][lever toggle]>
+                <[vector3_float64][R0][ 6.056202 -0.2995 0.10374 ]>
+                <[matrix3_float64][B0][ -0.97744 0.0 0.2112  0.2112 -0.00005 0.97744  0.00001 1.0 0.00005 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.FuelSelector]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.005]>
+                <[float64][Length][0.02]>
+            >
+            <[control_cylinder][FuelSelectorBase][33]
+                <[string8][Type][lever toggle base]>
+                <[vector3_float64][R0][ 6.065244 -0.2995 0.101786 ]>
+                <[matrix3_float64][B0][ -0.97743 -0.00008 0.21127  0.21127 0.00074 0.97743  -0.00023 1.0 -0.00071 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.FuelSelector]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.015]>
+                <[float64][Length][0.003]>
+            >
+            <[control_cylinder][FuelPump][32]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.986461 -0.392478 0.024786 ]>
+                <[matrix3_float64][B0][ -0.93788 0.01116 0.34679  0.34487 -0.07998 0.93524  0.03817 0.99673 0.07116 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.FuelPump]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.005]>
+                <[float64][Length][0.02]>
+            >
+            <[control_cylinder][FuelPumpBase][32]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.9967 -0.3926 0.021 ]>
+                <[matrix3_float64][B0][ -0.93961 0.01796 0.34178  0.33941 -0.07947 0.93727  0.04399 0.99668 0.06857 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.FuelPump]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.015]>
+                <[float64][Length][0.003]>
+            >
+//Trim 140
+            <[control_box][APCCutout][140]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.521274 0.48289 0.040528 ]>
+                <[matrix3_float64][B0][ -0.32867 0.29489 -0.89723  0.94415 0.07897 -0.31991  -0.02348 -0.95226 -0.30437 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][APCCutout]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[vector3_float64][Dimensions][0.016 0.005 0.006]>
+            >
+            <[control_cylinder][APCCutoutBase][140]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.5187 0.4852 0.0335 ]>
+                <[matrix3_float64][B0][ -0.32885 0.2952 -0.89706  0.94408 0.0789 -0.32012  -0.02372 -0.95217 -0.30464 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][APCCutout]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.002]>
+            >
+            <[control_box][StabPitch][141]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.414851 0.488001 0.048855 ]>
+                <[matrix3_float64][B0][ -0.01896 0.36639 -0.93027  0.99954 -0.01519 -0.02636  -0.02378 -0.93034 -0.36594 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][StabPitch]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[vector3_float64][Dimensions][0.016 0.005 0.006]>
+            >
+            <[control_cylinder][StabPitchBase][141]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.4139 0.4894 0.0429 ]>
+                <[matrix3_float64][B0][ -0.01894 0.36669 -0.93015  0.99953 -0.01537 -0.02641  -0.02398 -0.93022 -0.36622 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][StabPitch]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.002]>
+            >
+            <[control_box][StabRoll][142]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.415251 0.503701 0.053955 ]>
+                <[matrix3_float64][B0][ -0.01896 0.36639 -0.93027  0.99954 -0.01519 -0.02636  -0.02378 -0.93034 -0.36594 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][StabRoll]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[vector3_float64][Dimensions][0.016 0.005 0.006]>
+            >
+            <[control_cylinder][StabRollBase][142]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.4143 0.5051 0.048 ]>
+                <[matrix3_float64][B0][ -0.01894 0.36669 -0.93015  0.99953 -0.01537 -0.02641  -0.02398 -0.93022 -0.36622 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][StabRoll]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.002]>
+            >
+            <[control_box][StabYaw][143]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.414451 0.473001 0.044055 ]>
+                <[matrix3_float64][B0][ -0.01896 0.36639 -0.93027  0.99954 -0.01519 -0.02636  -0.02378 -0.93034 -0.36594 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][StabYaw]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[vector3_float64][Dimensions][0.016 0.005 0.006]>
+            >
+            <[control_cylinder][StabYawBase][143]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.4135 0.4744 0.0381 ]>
+                <[matrix3_float64][B0][ -0.01894 0.36669 -0.93015  0.99953 -0.01537 -0.02641  -0.02398 -0.93022 -0.36622 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][StabYaw]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.002]>
+            >
+            <[control_box][RudderTrimPilot][144]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.458851 0.483501 0.044055 ]>
+                <[matrix3_float64][B0][ -0.05557 0.24653 -0.96754  0.95937 -0.2553 -0.12015  -0.27663 -0.9349 -0.22233 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.RudderTrim]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+               <[vector3_float64][Dimensions][0.016 0.005 0.006]>
+            >
+            <[control_cylinder][RudderTrimPilotBase][144]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 5.4579 0.4849 0.0381 ]>
+                <[matrix3_float64][B0][ -0.03812 0.30689 -0.95098  0.9591 -0.25588 -0.12102  -0.28048 -0.9167 -0.28459 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.RudderTrim]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.002]>
+            >
+            <[control_box][APCCutoutCover][145]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.509865 0.481497 0.045259 ]>
+                <[matrix3_float64][B0][ -0.51287 0.32151 -0.79599  0.85833 0.17546 -0.48216  -0.01536 -0.93051 -0.36595 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][APCCutoutCover]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[vector3_float64][Dimensions][0.02 0.01 0.012]>
+            >
+            <[control_box][PitchCover][146]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.406585 0.486613 0.053287 ]>
+                <[matrix3_float64][B0][ -0.51287 0.32151 -0.79599  0.85833 0.17546 -0.48216  -0.01536 -0.93051 -0.36595 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][PitchCover]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[vector3_float64][Dimensions][0.02 0.01 0.012]>
+            >
+            <[control_box][RollCover][147]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.406985 0.502713 0.058387 ]>
+                <[matrix3_float64][B0][ -0.51287 0.32151 -0.79599  0.85833 0.17546 -0.48216  -0.01536 -0.93051 -0.36595 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][RollCover]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[vector3_float64][Dimensions][0.02 0.01 0.012]>
+            >
+            <[control_box][YawCover][148]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][ 5.406185 0.471613 0.048487 ]>
+                <[matrix3_float64][B0][ -0.51287 0.32151 -0.79599  0.85833 0.17546 -0.48216  -0.01536 -0.93051 -0.36595 ]>
+                <[vector3_float64][Direction][ 0.0 1.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][YawCover]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[vector3_float64][Dimensions][0.02 0.01 0.012]>
+            >
+//Canopy
+            <[control_input][CanopyHandleTravel][2]
+                <[uint32][InputID][HandleRotationAngle.Output]>
+                <[float64][Scaling][1.2]>
+            >
+            <[control_rotation][CanopyHandleTransform][2]
+                <[string8][Input][CanopyHandleTravel.Output]>
+                <[tmvector3d][Axis][ 0.036 -0.976 0.2149 ]>
+                <[tmvector3d][Pivot][ 5.781 -0.3529 0.2996 ]>
+            >
+            <[control_cylinder][CanopyHandleFront][3]
+                <[string8][Type][lever toggle ]>
+                <[vector3_float64][R0][ 5.717409 -0.38429 0.148122 ]>
+                <[tmmatrix3d][B0][ 0.0 -0.97973 0.20035  1.0 0.00001 0.00002  -0.00002 0.20035 0.97973 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepDistance][0.03]>
+                <[string8][InputTransform][CanopyHandleTransform.Output]>
+                <[control_message][OnStep][]
+                    <[string8][Message][CabinDoors.LeftForward]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.018]>
+                <[float64][Length][0.012]>
+            >
+            <[control_input][CanopyRotationAngle][2]
+                <[uint32][InputID][CanopyRotationAngle.Output]>
+            >
+            <[control_input][CanopyGrabHandleTravel][2]
+                <[uint32][InputID][CanopyGrabHandleTravel.Output]>
+                <[float64][Scaling][1.2]>
+            >
+            <[control_translation][CanopyGrabHandleTranslation][2]
+                <[string8][Input][CanopyGrabHandleTravel.Output]>
+                <[tmvector3d][Axis][ -0.9935 0.0229 0.1117 ]>
+            >
+            <[control_rotation][CanopyFrameRotation][2]
+                <[string8][Input][CanopyRotationAngle.Output]>
+                <[tmvector3d][Axis] [ -0.9935 0.0229 0.1117 ]>
+                <[tmvector3d][Pivot][ 5.89 0.3843 0.3628 ]>
+                <[string8][InputTransform][CanopyGrabHandleTranslation.Output]>
+            >
+            <[control_cylinder][CanopyGrabHandle][3]
+                <[string8][Type][switch toggle ]>
+                <[vector3_float64][R0][ 5.650334 -0.331028 0.444428 ]>
+                <[tmmatrix3d][B0][ -0.9918 -0.05137 0.11698  0.05171 -0.99866 -0.00015  0.11683 0.0059 0.99313 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepDistance][0.03]>
+                <[string8][InputTransform][CanopyFrameRotation.Output]>
+                <[control_message][OnStep][]
+                    <[string8][Message][CabinDoors.LeftForward]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.02]>
+                <[float64][Length][0.07]>
+            >
+
+            // gear
+            <[control_input][GearLever][]
+                <[uint32][InputID][GearLever.Output]>
+                <[float64][Scaling][1.2]>
+                <[float64][Offset][-0.9]>
+            >
+            <[control_rotation][GearLeverTransform][]
+                <[string8][Input][GearLever.Output]>
+                <[tmvector3d][Axis][ 0.0 -0.8769 -0.4807 ]>
+                <[tmvector3d][Pivot][ 6.0671 0.4045 0.1503 ]>
+            >
+            <[control_cylinder][GearLeverGrip][114]
+                <[string8][Type][lever toggle]>
+                <[vector3_float64][R0][ 5.98769 0.41477 0.13161 ]>
+                <[matrix3_float64][B0][ -0.16757 -0.45771 0.87317  0.00089 0.88562 0.46441  -0.98586 0.07859 -0.148 ]>
+                <[vector3_float64][Direction][ -0.16757 -0.45771 0.87317 ]>
+                <[string8][InputTransform][GearLeverTransform.Output]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.Gear]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.011]>
+                <[float64][Length][0.04]>
+            >
+
+            // stick
+            <[control_input][StickElevator][]
+                <[uint32][InputID][StickElevator.Output]>
+                <[float64][Scaling][0.2]>
+            >
+            <[control_input][StickAileron][]
+                <[uint32][InputID][StickAileron.Output]>
+                <[float64][Scaling][0.2]>
+            >
+            <[control_rotation][StickAileronTransform][]
+                <[string8][Input][StickAileron.Output]>
+                <[tmvector3d][Axis][ 1.0 0.0 0.0 ]>
+                <[tmvector3d][Pivot][ 5.9722 0.0 -0.160906 ]>
+            >
+            <[control_rotation][StickTransform][]
+                <[string8][Input][StickElevator.Output]>
+                <[tmvector3d][Axis][ 0.0 1.0 0.0 ]>
+                <[tmvector3d][Pivot][ 5.9722 0.0 -0.160906 ]>
+                <[string8][InputTransform][StickAileronTransform.Output]>
+            >
+            <[control_cylinder][StickGrip][114]
+                <[string8][Type][stick]>
+                <[vector3_float64][R0][ 5.908685 0.010935 0.165173 ]>
+                <[matrix3_float64][B0][ 0.35957 0.17254 0.91703  -0.063 0.985 -0.16063  -0.93099 -0.00001 0.36505 ]>
+                <[vector3_float64][Direction] [ 1.0 0.0 0.0 ]>
+                <[vector3_float64][Direction2][ 0.0 -1.0 0.0 ]>
+                <[float64][StepDistance][0.000075]>
+                <[string8][InputTransform][StickTransform.Output]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Controls.Roll.Input]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][15.0]>
+                >
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.Pitch.Input]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][0.0012]>
+                >
+                <[float64][Radius][0.027]>
+                <[float64][Length][0.15]>
+            >
+
+            // throttle
+            <[control_input][ThrottleLever][]
+                <[uint32][InputID][ThrottleLever.Output]>
+                <[float64][Scaling][1.0]>
+                <[float64][Offset][-1.0]>
+            >
+            <[control_rotation][ThrottleLeverTransform][]
+                <[string8][Input][ThrottleLever.Output]>
+                <[tmvector3d][Axis][ 0.0 1.0 0.0 ]>
+                <[tmvector3d][Pivot][ 5.879209 0.382033 0.010699 ]>
+            >
+            <[control_cylinder][ThrottleGrip][114]
+                <[string8][Type][stick]>
+                <[vector3_float64][R0][ 5.879228 0.314014 0.162314 ]>
+                <[matrix3_float64][B0][ 0.00174 -0.46441 0.88562  0.00092 0.88562 0.46441  -1.0 0.0 0.00197 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepDistance][0.0009]>
+                <[string8][InputTransform][ThrottleLeverTransform.Output]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.Throttle1]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][0.007]>
+                >
+                <[float64][Radius][0.027]>
+                <[float64][Length][0.15]>
+            >
+
+            <[control_cylinder][StormBase][7]
+                <[string8][Type][switch toggle base]>
+                <[vector3_float64][R0][ 6.073645 -0.3285 0.243391 ]>
+                <[matrix3_float64][B0][ 0.9427 -0.00007 -0.33364  0.33364 0.00001 0.9427  -0.00006 -1.0 0.00003 ]>
+                <[vector3_float64][Direction][ 0.26039 0.0 0.9655 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Storm]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.002]>
+            >
+        >
+    >
+>

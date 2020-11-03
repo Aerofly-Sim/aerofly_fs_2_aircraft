@@ -1,0 +1,146 @@
+<[file][][]
+    <[modelmanager][][]
+        <[pointer_list_tmuniverse][DynamicObjects][]
+
+            // engines
+            <[input_lever][Throttle1Input][210]
+                <[float64][Value][0.87]>
+            >
+
+            // flaps up
+            <[input_default][FlapsInput][0]
+                <[float64][Value][0.0]>
+            >
+            <[servoclassic][ServoLeftFlap][0]
+                <[float64][Position][0.0]>
+            >
+            <[servoclassic][ServoRightFlap][0]
+                <[float64][Position][0.0]>
+            >
+            <[servoclassic][ServoLeftSlat][0]
+                <[float64][Position][0.0]>
+            >
+            <[servoclassic][ServoRightSlat][0]
+                <[float64][Position][0.0]>
+            >
+
+            // gear up
+            <[servoclassic][GearLever][0]
+                <[float64][Value][0.0]>
+            >
+            <[servolinear][GearSequence][0]
+                <[float64][Position][0.0]>
+            >
+            <[multibody_joint][JointNoseGearUpper][15]
+                <[float64][Value][-1.90075701308831]>
+            >
+            <[multibody_joint][JointNoseGearMiddle][16]
+                <[float64][Value][-2.84870209431648e-05]>
+            >
+            <[multibody_joint][JointNoseGearLower][17]
+                <[float64][Value][-0.031070516998273]>
+            >
+            <[multibody_joint][JointLeftGearHinge][23]
+                <[float64][Value][-0.506210362734145]>
+            >
+            <[multibody_joint][JointLeftGear][25]
+                <[float64][Value][1.58920040403082]>
+            >
+            <[multibody_joint][JointLeftGearLower][28]
+                <[float64][Value][-1.60000027717127]>
+            >
+            <[multibody_joint][JointRightGearHinge][34]
+                <[float64][Value][0.506210664823862]>
+            >
+            <[multibody_joint][JointRightGear][35]
+                <[float64][Value][1.58920045047996]>
+            >
+            <[multibody_joint][JointRightGearLower][38]
+                <[float64][Value][-1.60000026844901]>
+            >
+
+            // trim back
+            <[input_default][PitchTrim][90]
+                <[float64][Value][-0.09]>
+            >
+            <[servoclassic][ServoElevator][126]
+                <[float64][Position][-0.017]>
+            >
+
+            // lights
+            <[input_switch][StrobeLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_discrete][LandingLightSwitchTaxi][0]
+                <[float64][Value][0.0]>
+            >
+            <[input_discrete][NavigationLightSwitch][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_discrete][LandingLightSwitch][0]
+                <[float64][Value][0.0]>
+            >
+        // switches
+			<[input_switch][BatteryMasterSwitch][0]
+                <[float64][Value][1.0]>
+            >
+            <[input_switch][LeftGeneratorSwitch][0]
+                <[float64][Value][0.0]>
+            >
+			<[input_switch][RightGeneratorSwitch][0]
+                <[float64][Value][0.0]>
+            >
+			<[input_switch][GPSOn][0]
+                <[float64][Value][1.0]>
+            >
+			<[input_switch][FuelShutOff][0]
+                <[float64][Value][0.0]>
+            >
+			<[input_default][MapBrightnessKnob][0]
+                <[float64][Value][0.5]>
+            >
+			<[input_discrete][EngineStartSwitch1][]
+			    <[float64][Value][1.0]>
+            >
+			<[input_discrete][EngineStartSwitch2][]
+			    <[float64][Value][1.0]>
+            >
+			<[input_discrete][OOnOff][]
+			    <[float64][Value][1.0]>
+            >
+			<[input_discrete][INSSelector][]
+			    <[float64][Value][2.0]>
+            >
+			<[input_discrete][DCU9][]
+			    <[float64][Value][3.0]>
+            >
+			<[input_discrete][IFFM1Switch][]
+			    <[float64][Value][1.0]>
+            >
+			<[input_discrete][IFFM3ASwitch][]
+			    <[float64][Value][1.0]>
+            >
+			<[input_switch][FlyingSuit][0]
+                <[float64][Value][1.0]>
+            >
+			<[input_switch][SwitchPitotHeat][0]
+                <[float64][Value][1.0]>
+            >
+			<[input_discrete][GroundSpeedSelector][]
+			    <[float64][Value][3.0]>
+            >
+			<[input_discrete][GroundSpeedTas][]
+			    <[float64][Value][-1.0]>
+            >
+			<[input_discrete][IFFMaster][]
+			    <[float64][Value][3.0]>
+            >
+			<[input_discrete][IFFReply][]
+			    <[float64][Value][2.0]>
+            >
+			<[input_discrete][TCNModeSelect][]
+			    <[float64][Value][2.0]>
+            >
+        >
+    >
+>

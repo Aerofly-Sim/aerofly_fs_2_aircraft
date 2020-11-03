@@ -1,0 +1,18 @@
+﻿<[file][][]
+    <[object][][]
+        <[int][Version][210]>
+        <[vec32array][ContactSpheres][ ( 1.593 1.021 -0.748 0.14) ( 1.593 -1.021 -0.748 0.14) (-1.224 1.021 -0.76 0.14) ( -1.224 -1.021 -0.76 0.14) ]>
+        <[string8][DisplayName][Lynx Mark7]>
+        <[string8][DescriptionTextEN][Westland Lynx Mark7]>
+        <[float64][WingSpan][12.8]>
+        <[float64][Mass][4355]>
+        <[float64][MaximumSpeed][80.0]>
+        <[float64][MinimumSpeed][0.0]>
+        <[bool][Airplane][false]>
+        <[bool][Helicopter][true]>
+        <[bool][Gear][false]>
+        <[float64][MaximumAltitude][3230]>
+//        <[string8][Pilot][pilot_jason]>
+//        <[bool][Profi][true]>
+    >
+>
